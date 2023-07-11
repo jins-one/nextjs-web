@@ -1,0 +1,59 @@
+import { useEffect,useRef } from "react";
+import { withSessionSsr } from "@/fetchs/session";
+import { decodeRSA } from "@/functions/rsa/vaild";
+import getConfig from "next/config"
+
+/**
+ * 이메일로 보내진 주소를 타고 들어오는 페이지
+ * @param {boolean} param0 이메일인증이 정상일경우
+ * @returns component
+ */
+export default function EmailCheck({success}){
+    const didMount = useRef(false);
+    useEffect(()=>{
+        if(didMount.current){return;}
+        didMount.current = true;
+        alert('인증이 완료 되었습니다. 회원가입 다음단계로 진행해주세요');
+    },[])
+    return <div></div>   
+}
+
+export const getServerSideProps = withSessionSsr( async function ({req, res, ...contents}) {
+
+    console.log('query param확인')
+    const emailStr = decodeRSA(contents.query.p);
+    const {serverRuntimeConfig} = getConfig();
+    const {emailCheck} = serverRuntimeConfig;
+
+    const email = emailStr.split('$')[0];
+    const encryptCode = emailStr.split('$')[1];
+
+    const currentTime = new Date();
+    currentTime.setMinutes(currentTime.getMinutes() + 5); //이메일 인증 후 최대 5분간 유효
+
+    emailCheck.push({
+        email: email,
+        maxTime: currentTime,
+        encryptCode: encryptCode
+    });
+
+
+    return {
+        props: {
+            success: true
+        }
+    }
+})
+
+const arr=[{
+    email: 'coai@gamie.com',
+    token : 'asdfasdfasdfasdfasdf'
+}]
+function dupliCheck(arr=[],findKey='',value=''){
+    const check = arr.filter((i)=>i[findKey] == value)
+    if(check.length == 0){
+        //찾는게 없으면 false, 찾는게 있으면 true
+        return false;
+    }else{return true}
+
+}

@@ -1,0 +1,859 @@
+.csSection {
+    width: 1140px;
+}
+
+.csContainer {
+    padding-top: var(--size-100);
+    padding-bottom: var(--size-180);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: -0.02em;
+    font-family: var(--fontNoto);
+}
+
+.pageTitle {
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.tabDiv {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: var(--size-24);
+}
+
+.tabNotActice {
+    padding: var(--size-20) var(--size-40);
+    width: fit-content;
+    height: fit-content;
+
+    font-size: 1.125rem;
+    color: var(--textColor1);
+    font-weight: 400;
+
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+}
+
+
+
+.tabDiv div:nth-child(1),
+.tabDiv div:nth-child(2) {
+    margin-right: var(--size-12);
+}
+
+
+.tabDiv div span {
+    cursor: pointer;
+}
+
+.tabActice {
+    color: white !important;
+    background: var(--defaultColor);
+    border-radius: 6.188rem;
+}
+
+.searchDiv {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    border-bottom: 2px solid #b2b2b2;
+    padding: 1.5rem 1.563rem;
+}
+
+.searchIcon {
+    margin-right: 1.563rem;
+}
+
+.searchDiv input {
+    width: 100%;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    outline: 0;
+
+}
+
+.searchDiv input::placeholder {
+    color: #b2b2b2;
+}
+
+.csDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.csItem:nth-child(1) {
+    flex-basis: 25%;
+    flex-shrink: 0;
+}
+
+.csItem:nth-child(2) {
+    flex-basis: 75%;
+    flex-shrink: 0;
+}
+
+.itemTab {
+    height: 4.875rem;
+    /* margin-top: 2rem; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--textColor1);
+
+    cursor: pointer;
+    width: 11.438rem;
+}
+
+
+
+.itemTabActive {
+    font-weight: 700;
+    color: var(--defaultColor);
+}
+
+.itemList {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--blackColor);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    cursor: pointer;
+
+    width: 100%;
+    height: 4.875rem;
+    /* margin-top: 2rem; */
+    border-bottom: 2px solid #f6f7f9;
+
+}
+
+
+
+.itemList>div:nth-child(1) {
+    flex-basis: 85%;
+    flex-shrink: 0;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.itemList>div:nth-child(2) {
+    flex-basis: 15%;
+    font-size: 0.875rem;
+
+    text-align: right;
+}
+
+.pageDiv {
+    margin-top: 5.625rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.pageSubTitle {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-top: 2.75rem;
+    margin-bottom: 5.5rem;
+}
+
+.bar2 {
+    width: 71.25rem;
+    height: 2px;
+    background: #d9d9d9;
+    margin-bottom: 5rem;
+
+}
+
+.inquiryDiv {
+    margin-bottom: 1.5rem;
+    border-radius: 0.625rem;
+    transition: box-shadow .3s ease .05s;
+}
+
+.inquiryDiv:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.writeBtnDiv {
+    width: 50rem;
+    margin-top: var(--size-50);
+
+    display: flex;
+}
+
+.writeBtnDiv>a {
+    width: 100%;
+}
+
+.writeBtn {
+    width: 100%;
+    height: var(--size-50);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.625rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;
+    background: var(--defaultColor);
+    cursor: pointer;
+}
+
+
+.formDiv {
+    width: 50rem;
+}
+
+.goBack {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-size: 0.875rem;
+    color: #b2b2b2;
+    font-weight: 400;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.goBack>img {
+    margin-right: 0.188rem;
+}
+
+.inputForm {
+    margin-top: 1.625rem;
+}
+
+.inputItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 2.875rem;
+}
+
+.inputItem2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 2.875rem;
+}
+
+.itemTitle2 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.4;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 20%;
+    flex-shrink: 0;
+}
+
+.itemTitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemCont2 {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 80%;
+    flex-shrink: 0;
+}
+
+.itemCont {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.itemCont>select,
+.itemCont>input {
+    width: 100%;
+    height: var(--size-50);
+    font-size: 1.125rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    padding-inline: 1.5rem;
+    border-radius: 0.625rem;
+    border: 2px solid #b2b2b2;
+}
+
+
+.checkBox {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    accent-color: var(--defaultColor);
+}
+
+.checkBox>input {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.75rem;
+}
+
+.phoneNum {
+    margin-left: 2rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.inputContents>textarea {
+    min-height: 25rem;
+    max-width: 100%;
+    min-width: 100%;
+    font-size: 0.875rem;
+
+}
+
+.appBtn {
+    padding: 1.25rem 2.5rem;
+    border-radius: 0.313rem;
+    border: 2px solid #a967fe;
+    color: #a967fe;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: var(--size-100);
+    margin-bottom: var(--size-40);
+    width: fit-content;
+}
+
+
+/* .addFileBtn input[type=file]::file-selector-button {
+    color: white;
+    padding: 1.125rem 1.5rem;
+    background-color: var(--defaultColor);
+    border-radius: 0.313rem;
+    width: fit-content;
+    cursor: pointer;
+    border: none;
+    margin-top: 1.5rem;
+} */
+
+
+.addFileBtn {
+    min-height: var(--size-50);
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.uploadName {
+    font-size: 1rem;
+    font-weight: 500;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 0.75rem;
+}
+
+.uploadName>div {
+    width: 12.5rem;
+    margin-right: 0.75rem;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.uploadName>img {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.addFileBtn label {
+    color: white;
+    padding: 1.125rem 1.5rem;
+    background-color: var(--defaultColor);
+    border-radius: 0.313rem;
+    width: fit-content;
+    cursor: pointer;
+    border: none;
+    /* margin-top: 1.5rem; */
+}
+
+.addFileBtn input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+.btnDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--size-50);
+}
+
+.cancelBtn,
+.authBtn {
+    border-radius: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: var(--size-50);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.cancelBtn {
+    width: 12.5rem;
+    border: 2px solid #b2b2b2;
+    border-radius: 0.625rem;
+}
+
+.authBtn {
+    width: 35.5rem;
+    color: white;
+    background: var(--defaultColor);
+}
+
+.noList {
+    width: 50rem;
+    height: 12.5rem;
+    border-radius: 0.625rem;
+    background-color: #f6f7f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #b2b2b2;
+    line-height: 1.4;
+}
+
+.modifyInquiryBtnDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0.75rem;
+
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.modifyInquiryBtnDiv .bar {
+    width: 2px;
+    height: 18px;
+    background-color: #808080;
+    margin-inline: 1.5rem;
+}
+
+.modifyInquiryBtnDiv>div:nth-child(1),
+.modifyInquiryBtnDiv>div:nth-child(3) {
+    cursor: pointer;
+}
+
+.mBr {
+    display: none;
+}
+
+.emptyBlank {
+    height: 2.875rem;
+}
+
+@media screen and (max-width:1250px) {
+    .mBr {
+        display: block;
+    }
+
+    .wBr {
+        display: none;
+    }
+
+    .csSection {
+        width: 100%;
+    }
+
+    .writeBtn {
+        height: var(--size-40);
+    }
+
+    .csContainer {
+        width: 320px;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 55px;
+        padding-top: 2.063rem !important;
+        padding-bottom: var(--size-100);
+    }
+
+    .pageTitle {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .pageSubTitle {
+        font-size: 0.75rem;
+        line-height: 1.3;
+        margin-top: 0.563rem;
+        margin-bottom: 2.813rem;
+    }
+
+    .writeBtnDiv {
+        width: 100%;
+        margin-top: var(--size-50);
+    }
+
+    .writeBtn {
+        width: 100%;
+        height: var(--size-40);
+
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+
+    .inquiryItemDiv {
+        width: 100%;
+    }
+
+    .emptyBlank {
+        height: 1.063rem;
+    }
+
+    .noList {
+        width: 100%;
+        height: 5rem;
+
+        font-size: 0.75rem;
+    }
+
+    .formDiv {
+        width: 100%;
+    }
+
+    .goBack {
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        font-size: 0.875rem;
+        color: #b2b2b2;
+        font-weight: 400;
+        line-height: 1.4;
+        cursor: pointer;
+    }
+
+    .goBack>img {
+        margin-right: 0;
+    }
+
+    .inputForm {
+        margin-top: 0.875rem;
+    }
+
+    .inputItem {
+        margin-bottom: 1.438rem;
+    }
+
+    .inputItem2 {
+        margin-bottom: 2.5rem !important;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .itemTitle2 {
+        font-size: 1rem;
+    }
+
+    .itemTitle {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 0.25rem;
+    }
+
+    .itemCont2 {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1.063rem;
+    }
+
+    .itemCont>select,
+    .itemCont>input {
+        font-size: 0.875rem;
+    }
+
+
+    .checkBox {
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 0.625rem;
+    }
+
+    .checkBox>input {
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-right: 0.625rem;
+    }
+
+    .phoneNum {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    .btnDiv {
+        margin-top: var(--size-20);
+    }
+
+    .cancelBtn,
+    .authBtn {
+        height: var(--size-40);
+        font-size: 0.75rem;
+    }
+
+    .cancelBtn {
+        width: 5.033rem;
+    }
+
+    .authBtn {
+        width: 14.194rem;
+    }
+
+
+
+
+    /* ******************************** */
+
+    .tabDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        margin-top: var(--size-24);
+    }
+
+    .tabNotActice {
+        padding: 0;
+        width: 6rem;
+        height: var(--size-30);
+        font-size: 0.75rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* .tabNotActice:not(.tabActice):hover>a {
+        color: inherit;
+    } */
+
+    .tabDiv div:nth-child(1),
+    .tabDiv div:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .csDiv {
+        flex-direction: column;
+        margin-top: 0 !important;
+    }
+
+    .csItem:nth-child(1) {
+        flex-basis: inherit;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.5rem !important;
+    }
+
+    .csItem:nth-child(2) {
+        flex-basis: inherit;
+    }
+
+    .itemTabDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .itemTab {
+        height: 2.125rem;
+        width: 5.75rem;
+
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+
+    .itemTabActive {
+        font-weight: 700;
+        color: var(--defaultColor);
+    }
+
+    .mBr.searchDiv {
+        display: flex;
+        align-items: center;
+    }
+
+    .searchDiv {
+        margin-top: 1.5rem;
+
+        padding: 0.844rem 0;
+    }
+
+    .searchIcon {
+        width: var(--size-20);
+        height: auto;
+        margin-right: 0.563rem;
+    }
+
+    .searchDiv input {
+        width: 280px;
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+
+    .csItem:nth-child(2)>div:nth-child(1) {
+        padding-top: var(--size-20) !important;
+        min-height: 15.625rem !important;
+    }
+
+
+    .itemList {
+        font-size: 0.875rem;
+        height: var(--size-50);
+        font-weight: 400;
+        border-bottom: 2px solid #f6f7f9;
+    }
+
+    .itemList>div:nth-child(1) {
+        flex-basis: 70%;
+        line-height: 1.4;
+        font-weight: 400;
+    }
+
+    .itemList>div:nth-child(2) {
+        flex-basis: 30%;
+        font-size: var(--size-12);
+        font-weight: 400;
+        line-height: 1.1;
+    }
+
+    .pageDiv {
+        margin-top: var(--size-40);
+    }
+
+    .mQnAListDiv {
+        margin-bottom: var(--size-10);
+    }
+
+    .mQnAListDiv:last-child {
+        margin-bottom: 0;
+    }
+
+    .itemTabSlide {
+        width: 840px;
+        height: 2.125rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .itemTabSlide .itemTab {
+        width: 135px;
+        /* justify-content: inherit;
+        padding-inline: var(--size-20); */
+        white-space: nowrap;
+    }
+
+
+    .conditionsItem {
+        overflow: auto;
+        /* scroll-behavior: smooth; */
+    }
+    /* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
+    .conditionsItem::-webkit-scrollbar {
+        display: none;
+    }
+
+    .conditionsItem {
+        -ms-overflow-style: none;
+        /* 인터넷 익스플로러 */
+        scrollbar-width: none;
+        /* 파이어폭스 */
+    }
+}
+
+@media (hover: hover) and (pointer: fine) { /* when supported */
+    .itemList:hover>div:nth-child(1) {
+        color: var(--defaultColor);
+    }
+
+    .tabNotActice:not(.tabActice):hover>a {
+        color: var(--defaultColor);
+    }
+
+    .itemTab:hover {
+        color: var(--defaultColor);
+    }
+
+    .inquiryDiv:hover {
+        box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.2);
+    }
+  }

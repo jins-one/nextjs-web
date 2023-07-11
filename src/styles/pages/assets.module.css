@@ -1,0 +1,1266 @@
+.assetsPageTitle {
+    display: flex;
+    margin-bottom: var(--size-40);
+    font-weight: 800;
+    font-size: var(--size-36);
+    line-height: 1.2;
+
+    margin-top: 2.87rem;
+}
+
+.propBox {
+    padding: 80px 70px 0 70px;
+    display: flex;
+
+    /* padding: var(--size-90) var(--size-100) var(--size-140); */
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.propBox .propInfo .bankDiv {
+    width: 100%;
+    border: 2px solid transparent;
+    border-radius: 0.625rem;
+    background-image: linear-gradient(#fff, #fff),
+        linear-gradient(95.31deg, #7A3EFD 1.06%, rgba(249, 147, 112, 0.5) 110.01%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.propBox .propInfo .bankBox {
+    padding: var(--size-32);
+}
+
+/* .propBox .propInfo .bankBox{
+    background-image: url('../../../public/images/img/my-info-box-back.png');   
+    background-size: 100% 100%;
+} */
+
+.propBox .propInfo .bankBox .nameBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 2.688rem;
+}
+
+.propBox .propInfo .bankBox .nameBox .title {
+    width: calc(var(--size-100) * 3 + 2px);
+
+    font-weight: 400;
+    font-size: var(--size-14);
+    line-height: 140%;
+
+    color: #B2B2B2;
+}
+
+.propBox .propInfo .bankBox .nameBox>div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.propBox .propInfo .bankBox .nameBox .bar {
+    width: 1px;
+    height: 16px;
+    background-color: #b2b2b2;
+    margin-inline: 12px;
+}
+
+.propBox .propInfo .bankBox .nameBox .editButton {
+    font-weight: 400;
+    font-size: var(--size-18);
+    line-height: 140%;
+
+    color: var(--defaultColor);
+
+    /* margin-left: calc(var(--size-40) * 3 + var(--size-14)); */
+
+    cursor: pointer;
+}
+
+.propBox .propInfo .bankBox .moneyBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.propBox .propInfo .bankBox .goAccountManage {
+    font-size: var(--size-14);
+    color: #B2B2B2;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+
+    width: fit-content;
+    cursor: pointer;
+}
+
+
+.propBox .propInfo .bankBox .goAccountManage>img {
+    margin-left: 2px;
+    transition: transform .1s ease-in-out .1s;
+}
+
+.propBox .propInfo .bankBox .goAccountManage:hover img {
+    transform: translateX(10px);
+}
+
+.propBox .propInfo .bankBox .goAccountManage>span {
+    margin-right: 0.125rem;
+}
+
+.propBox .propInfo .bankBox .moneyBox .leftUnit {
+    display: flex;
+    align-items: flex-end;
+}
+
+.propBox .propInfo .bankBox .moneyBox .leftUnit .money {
+    font-weight: 800;
+    font-size: calc(var(--size-40) + 2px);
+    line-height: 100%;
+
+    color: var(--defaultColor);
+}
+
+.propBox .propInfo .bankBox .moneyBox .leftUnit .unit {
+    font-weight: 500;
+    font-size: var(--size-26);
+    line-height: 100%;
+
+    color: var(--defaultColor);
+
+    margin-left: var(--size-10);
+}
+
+.propBox .propInfo .bankBox .moneyBox .leftUnit+img {
+    width: var(--size-16);
+    height: 100%;
+
+    margin: 0 var(--size-24);
+}
+
+.propBox .propInfo .bankBox .moneyBox .rightUnit {
+    display: flex;
+    align-items: flex-end;
+}
+
+.propBox .propInfo .bankBox .moneyBox .rightUnit .money {
+    font-weight: 700;
+    font-size: var(--size-24);
+    line-height: 140%;
+
+    color: var(--defaultColor);
+}
+
+.propBox .propInfo .bankBox .moneyBox .rightUnit .unit {
+    font-weight: 400;
+    font-size: var(--size-14);
+    line-height: 140%;
+
+    color: var(--textColor2);
+
+    margin-left: var(--size-10);
+}
+
+
+.propBox .propInfo .bankBox .moneyBox+.borderBar {
+
+    width: calc(var(--size-100) * 5);
+
+    border-top: 2px solid var(--defaultColor);
+
+    margin-top: calc(var(--size-30) * 2);
+    margin-bottom: calc(var(--size-26) - 1px);
+}
+
+.propBox .propInfo .bankBox .activeBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--size-60);
+}
+
+.propBox .propInfo .bankBox .activeBox>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--defaultColor3);
+    border-radius: 10px;
+
+    width: 249px;
+    height: var(--size-54);
+
+    transition: background-color .1s linear .05s, color .1s linear .05s;
+}
+
+.propBox .propInfo .bankBox .activeBox>div:hover {
+    background-color: var(--defaultColor3);
+}
+
+.propBox .propInfo .bankBox .activeBox>div:hover>.name {
+    color: var(--whiteColor);
+}
+
+
+.propBox .propInfo .bankBox .activeBox div>img {
+    width: var(--size-40);
+    height: var(--size-40);
+}
+
+.propBox .propInfo .bankBox .activeBox div>.name {
+    font-weight: 500;
+    font-size: var(--size-14);
+    line-height: 100%;
+
+    color: var(--defaultColor3);
+}
+
+.propBox .propInfo .bankBox .listBtn {
+    display: none;
+}
+
+.propGraph {
+    width: calc(var(--size-100) * 6);
+    /* height: 516px; */
+
+    margin-left: var(--size-32);
+}
+
+
+.swiperSlideF>.title,
+.swiperSlideS>.title {
+    font-weight: 800;
+    font-size: var(--size-36);
+    line-height: 120%;
+
+    margin-left: var(--size-30);
+    margin-bottom: var(--size-24);
+
+    width: calc(var(--size-100) * 4 + (var(--size-100) - var(--size-10)));
+}
+
+.swiperSlideF .ratioBox,
+.swiperSlideS .ratioBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* height: 500px; */
+}
+
+.swiperSlideF .ratioBox .chartBox {
+    width: 450px;
+    height: 450px;
+    position: relative;
+
+    margin-bottom: var(--size-50);
+}
+
+.swiperSlideF .ratioBox .chartBox .chartRatioText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background-color: #F6F7F9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.swiperSlideF .ratioBox .chartBox .chartRatioText>div:nth-child(1) {
+    font-size: var(--size-20);
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--defaultColor);
+}
+
+.swiperSlideF .ratioBox .chartBox .chartRatioText>div:nth-child(2)>span:nth-child(1) {
+    font-size: 2.625rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.swiperSlideF .ratioBox .chartBox .chartRatioText>div:nth-child(2)>span:nth-child(2) {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #B2B2B2;
+    margin-left: var(--size-10);
+}
+
+.swiperSlideF .ratioBox .chartBox .chartTooltip {
+    /* position: fixed;
+    top: -10px;
+    left: 10px; */
+
+    position: relative;
+    left: 50%;
+
+
+
+    padding: var(--size-16);
+
+    box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    background-color: var(--whiteColor);
+}
+
+.swiperSlideF .ratioBox .chartBox .chartTooltip .title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.swiperSlideF .ratioBox .statsBox {
+    width: 100%;
+    border: 2px solid transparent;
+    border-radius: 0.625rem;
+    background-image: linear-gradient(#fff, #fff),
+        linear-gradient(95.31deg, #7A3EFD 1.06%, rgba(249, 147, 112, 0.5) 110.01%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.swiperSlideF .ratioBox .stats {
+    padding: var(--size-40) var(--size-80);
+}
+
+.swiperSlideF .ratioBox .stats>.title {
+    font-weight: 700;
+    font-size: var(--size-28);
+    line-height: 140%;
+
+    margin-bottom: 2rem;
+}
+
+.swiperSlideF .ratioBox .stats .ratioList {
+    /* padding: var(--size-24) var(--size-32); */
+
+    background-color: var(--whiteColor);
+
+    border-radius: 10px;
+}
+
+.swiperSlideF .ratioBox .stats .ratioList>.title {
+    font-weight: 500;
+    font-size: var(--size-18);
+    line-height: 140%;
+}
+
+.swiperSlideF .ratioBox .stats .ratioList>ul.list {
+    list-style: none;
+}
+
+.swiperSlideF .ratioBox .stats .ratioList>ul.list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: calc(var(--size-10) + 1px);
+}
+
+.swiperSlideF .ratioBox .stats .ratioList>ul.list li .ball {
+    width: var(--size-16);
+    height: var(--size-16);
+
+    border-radius: 100%;
+}
+
+.swiperSlideF .ratioBox .stats .ratioList>ul.list li div {
+    display: flex;
+    align-items: center;
+}
+
+.swiperSlideF .ratioBox .stats .ratioList>ul.list li:nth-child(1) .ball {
+    background-color: var(--defaultColor);
+}
+
+.swiperSlideF .ratioBox .stats .ratioList>ul.list li:nth-child(2) .ball {
+    background-color: #FF9AC4;
+}
+
+.swiperSlideF .ratioBox .stats .ratioList>ul.list li:nth-child(3) .ball {
+    background-color: #B0D0FF;
+}
+
+.swiperSlideF .ratioBox .stats .ratioList>ul.list li:nth-child(4) .ball {
+    background-color: #F8D43F;
+}
+
+.swiperSlideF .ratioBox .stats .ratioList>ul.list li:nth-child(5) .ball {
+    background-color: #F99370;
+}
+
+.swiperSlideF .ratioBox .stats .ratioList>ul.list li .title {
+    font-weight: 400;
+    font-size: var(--size-18);
+    line-height: 140%;
+
+    margin: 0 var(--size-12);
+    color: #4D4D4D;
+
+    /* width: calc(var(--size-40) * 2); */
+}
+
+.swiperSlideF .ratioBox .stats .ratioList>ul.list li .persent {
+    font-weight: 700;
+    font-size: var(--size-24);
+    line-height: 140%;
+
+    /* width: calc(var(--size-30) * 2); */
+}
+
+.swiperSlideF .ratioBox .stats .ratioList>ul.list li .persent span {
+    font-size: 1.5rem;
+    color: #B2B2B2;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+
+
+.swiperSlideS .ratioBox {
+    padding: var(--size-32) calc(var(--size-40) + var(--size-18));
+    flex-direction: column;
+
+    height: 366px;
+}
+
+.swiperSlideS .ratioBox>.title {
+    font-weight: 500;
+    font-size: var(--size-24);
+    line-height: 140%;
+
+    color: #1A1A1A;
+
+    margin-bottom: var(--size-12);
+}
+
+.swiperSlideS .ratioBox .statusBox {
+    display: flex;
+    align-items: center;
+
+    background-color: var(--whiteColor);
+
+    border: 1px solid #EEEFEF;
+
+    border-radius: 6px;
+
+    padding: 8px var(--size-12);
+
+    margin-bottom: var(--size-12);
+
+    cursor: pointer;
+}
+
+.swiperSlideS .ratioBox .statusBox:last-child {
+    margin-bottom: 0;
+}
+
+
+.swiperSlideS .ratioBox .statusBox .iconBall {
+    background-color: var(--defaultColor);
+
+    border-radius: 100%;
+
+    width: 60px;
+    height: 60px;
+
+    padding: var(--size-10);
+}
+
+.swiperSlideS .ratioBox .statusBox .iconBall>img {
+    width: var(--size-40);
+    height: var(--size-40);
+}
+
+.swiperSlideS .ratioBox .statusBox .title {
+    font-weight: 400;
+    font-size: var(--size-18);
+    line-height: 100%;
+
+    margin-left: var(--size-20);
+
+    width: calc(var(--size-100) + var(--size-38));
+}
+
+.swiperSlideS .ratioBox .statusBox .result {
+    display: flex;
+    align-items: center;
+
+    margin-left: var(--size-50);
+
+    color: var(--defaultColor);
+}
+
+.swiperSlideS .ratioBox .statusBox .result .money {
+    font-weight: 800;
+    font-size: var(--size-36);
+    line-height: 120%;
+
+    display: inline-block;
+    width: calc(var(--size-100) + var(--size-30));
+
+    text-align: right;
+}
+
+.swiperSlideS .ratioBox .statusBox .result .unit {
+    font-weight: 400;
+    font-size: var(--size-28);
+    line-height: 100%;
+
+    margin-left: 4px;
+}
+
+
+
+
+.currentBox {
+    padding: 80px 70px 177px 70px;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.currentBox>.titleBox {
+    padding-bottom: var(--size-24);
+
+    border-bottom: 2px solid #B2B2B2;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.currentBox>.titleBox .title {
+    font-weight: 800;
+    font-size: var(--size-36);
+    color: var(--blackColor);
+}
+
+.checkBoxSection {
+    display: flex;
+}
+
+
+label.checkLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+
+    margin-left: var(--size-34);
+}
+
+label.checkLabel input[type="checkbox"] {
+    display: none;
+}
+
+label.checkLabel input[type="checkbox"]:checked+div {
+    background: url("../../../public/images/icon/icon-checkbox.png") no-repeat;
+    background-size: contain;
+}
+
+label.checkLabel div {
+    width: 20px;
+    height: 20px;
+
+    background: url("../../../public/images/icon/icon-uncheckbox.png") no-repeat;
+    background-size: contain;
+}
+
+label.checkLabel span {
+    font-weight: 400;
+    font-size: var(--size-14);
+    line-height: 140%;
+
+    color: var(--blackColor);
+}
+
+.ingContainer,
+.endContainer {
+    display: flex;
+    /* padding: var(--size-40) 0; */
+}
+
+.endContainer {
+    /* border-top: 2px solid #B2B2B2; */
+}
+
+.ingContainer[on="false"]+.endContainer {
+    border: none;
+}
+
+.ingContainer[on="false"],
+.endContainer[on="false"] {
+    display: none;
+}
+
+
+
+.ingContainer>.title,
+.endContainer>.title {
+    font-weight: 500;
+    font-size: var(--size-26);
+    line-height: 100%;
+
+    white-space: nowrap;
+
+    margin-right: calc(var(--size-100) + var(--size-18));
+}
+
+.endContainer>.title {
+    margin-right: calc(var(--size-100) + var(--size-40) + 2px);
+}
+
+.assetsCard {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: var(--size-36);
+    padding-bottom: var(--size-14);
+
+    border-bottom: 2px solid #eeefef;
+
+    width: 100%;
+}
+
+.assetsCard:last-child {
+    /* border: none; */
+}
+
+.assetsCard .leftBox {
+    display: flex;
+}
+
+.assetsCard .leftBox .ethLogo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: var(--size-50);
+    height: var(--size-50);
+
+    border-radius: 100px;
+
+    background-color: #A967FE;
+}
+
+.assetsCard .leftBox .ethLogo[status="end"] {
+    background-color: #b2b2b2;
+}
+
+.assetsCard .leftBox .ethLogo img {
+    width: var(--size-30);
+    height: var(--size-30);
+}
+
+.assetsCard .leftBox .titleBox {
+    display: flex;
+    align-items: center;
+
+    margin-left: var(--size-24);
+    margin-bottom: var(--size-26);
+
+}
+
+.assetsCard .leftBox .titleBox .title {
+    font-weight: 700;
+    font-size: var(--size-24);
+    line-height: 140%;
+
+    color: var(--blackColor);
+}
+
+.assetsCard .leftBox .titleBox .subTitle {
+    font-weight: 500;
+    font-size: var(--size-18);
+    line-height: 140%;
+
+    color: var(--textColor2);
+
+    margin-left: var(--size-12);
+
+    display: flex;
+}
+
+.assetsCard .leftBox .contentsBox .depositBox {
+    display: flex;
+    margin-left: var(--size-12);
+}
+
+.assetsCard .leftBox .contentsBox .depositBox div>.title {
+    font-weight: 400;
+    font-size: var(--size-14);
+    line-height: 140%;
+
+    color: var(--textColor2);
+
+    margin-left: var(--size-12);
+}
+
+.assetsCard .leftBox .contentsBox .depositBox div>.content {
+    font-weight: 400;
+    font-size: var(--size-14);
+    line-height: 140%;
+
+    color: var(--textColor1);
+    margin-left: calc(var(--size-10) - 2px);
+}
+
+.assetsCard .leftBox .contentsBox .depositBox div>.content::after {
+    content: 'ETH';
+}
+
+.assetsCard .rightBox {
+    display: flex;
+    align-items: center;
+}
+
+.assetsCard .rightBox .progressBox {}
+
+.assetsCard .rightBox .progressBox .titleBox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--size-12);
+}
+
+.assetsCard .rightBox .progressBox .titleBox .title {
+    font-weight: 400;
+    font-size: var(--size-14);
+    line-height: 140%;
+
+    color: var(--textColor2);
+}
+
+.assetsCard .rightBox .progressBox .titleBox .content {
+    font-weight: 500;
+    font-size: var(--size-26);
+    line-height: 100%;
+
+    color: var(--defaultColor);
+}
+
+
+.assetsCard .rightBox .progressBox .titleBox .content[status="end"] {
+    color: #B2B2B2;
+}
+
+.assetsCard .rightBox .progressBox .progressBar {
+    width: calc(var(--size-100) + var(--size-100));
+    height: var(--size-12);
+
+    border-radius: 10px;
+    background-color: #eeefef;
+
+    display: flex;
+
+    margin-bottom: var(--size-12);
+}
+
+.assetsCard .rightBox .progressBox .progressBar span.rate {
+    height: var(--size-12);
+    border-radius: 10px;
+    background-color: var(--defaultColor);
+    display: inline-block;
+}
+
+.assetsCard .rightBox .progressBox .progressBar span.rate[status="end"] {
+    background-color: #B2B2B2;
+}
+
+.assetsCard .rightBox .progressBox .dateBox div {
+    text-align: right;
+    font-weight: 400;
+    font-size: var(--size-14);
+    line-height: 140%;
+}
+
+
+.assetsCard .rightBox .detailListButton {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+
+    height: 56px;
+
+    background-color: var(--whiteColor);
+
+    border: 2px solid var(--defaultColor3);
+    border-radius: 10px;
+
+    font-size: var(--size-14);
+
+    color: var(--defaultColor3);
+
+    margin-left: calc(var(--size-50) + var(--size-10));
+
+    cursor: pointer;
+    transition: background-color .1s linear .05s, color .1s linear .05s;
+}
+
+
+.assetsCard .rightBox .detailListButton:hover {
+    background-color: var(--defaultColor3);
+    color: var(--whiteColor);
+}
+
+.mt18 {
+    margin-top: var(--size-18);
+}
+
+.curPo {
+    cursor: pointer;
+}
+
+.mt40 {
+    margin-top: var(--size-40);
+}
+
+.ml24 {
+    margin-left: var(--size-24);
+}
+
+.radioBoxFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #4d4d4d;
+
+    cursor: pointer;
+}
+
+.radioBoxFlex input {
+    margin-right: 0.75rem;
+}
+
+.mBr {
+    display: none;
+}
+
+
+@media screen and (max-width:1250px) {
+    .mBr {
+        display: block;
+    }
+
+    .wBr {
+        display: none;
+    }
+
+    .assetsDiv {
+        width: 320px;
+        margin: 0 auto;
+        padding: 0;
+        margin-top: 55px;
+
+        padding-top: var(--size-20);
+        padding-bottom: 5.938rem;
+    }
+
+    .propBox {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .assetsPageTitle {
+        margin: 0;
+        font-weight: 700;
+        font-size: var(--size-24);
+        line-height: 1;
+    }
+
+    .propGraph {
+        width: 100%;
+        margin-left: 0;
+        margin-top: var(--size-20);
+    }
+
+    .swiperSlideF .ratioBox .chartBox {
+        width: 320px;
+        height: 320px;
+
+        margin-bottom: var(--size-20);
+    }
+
+
+
+    .swiperSlideF .ratioBox .chartBox .chartRatioText {
+        width: 254px;
+        height: 254px;
+    }
+
+    .swiperSlideF .ratioBox .chartBox .chartRatioText>div:nth-child(1) {
+        font-size: var(--size-14);
+    }
+
+    .swiperSlideF .ratioBox .chartBox .chartRatioText>div:nth-child(2)>span:nth-child(1) {
+        font-size: 2.25rem;
+    }
+
+    .swiperSlideF .ratioBox .chartBox .chartRatioText>div:nth-child(2)>span:nth-child(2) {
+        font-size: 1.5rem;
+        margin-left: 0.25rem;
+    }
+
+
+
+    .swiperSlideF .ratioBox .stats {
+        padding: var(--size-30);
+    }
+
+    .swiperSlideF .ratioBox .stats>.title {
+        font-size: var(--size-20);
+        line-height: 1;
+
+        margin-bottom: 1.5rem;
+    }
+
+    .swiperSlideF .ratioBox .stats .ratioList {
+        background-color: var(--whiteColor);
+        border-radius: 10px;
+    }
+
+    .swiperSlideF .ratioBox .stats .ratioList>ul.list li {
+        margin-bottom: 1rem;
+    }
+
+    .swiperSlideF .ratioBox .stats .ratioList>ul.list li .ball {
+        width: var(--size-14);
+        height: var(--size-14);
+    }
+
+    .swiperSlideF .ratioBox .stats .ratioList>ul.list li .title {
+        font-size: var(--size-14);
+    }
+
+    .swiperSlideF .ratioBox .stats .ratioList>ul.list li .persent {
+        font-size: var(--size-20);
+        line-height: 100%;
+    }
+
+    .swiperSlideF .ratioBox .stats .ratioList>ul.list li .persent span {
+        font-size: 0.875rem;
+        font-weight: 400;
+        margin-left: 6px;
+    }
+
+    .adBox {
+        width: 320px;
+        height: 140px;
+        background: url('../../../public/images/img/blink-deposit-usate-m.png') no-repeat center;
+    }
+
+
+
+    .propBox .propInfo {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: var(--size-40);
+    }
+
+    .propBox .propInfo .bankDiv {
+        margin-top: var(--size-20);
+    }
+
+    .propBox .propInfo .bankBox {
+        padding: var(--size-30) 1rem;
+    }
+
+    .propBox .propInfo .bankBox .nameBox {
+        /* margin-bottom: 1em; */
+        display: none;
+    }
+
+    .propBox .propInfo .bankBox .nameBox .title {
+        width: fit-content;
+    }
+
+    .propBox .propInfo .bankBox .nameBox .editButton {
+        font-size: var(--size-12);
+    }
+
+    .propBox .propInfo .bankBox .moneyBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .propBox .propInfo .bankBox .goAccountManage {
+        display: none;
+        font-size: var(--size-12);
+        margin-top: 0.25rem;
+    }
+
+
+    .propBox .propInfo .bankBox .goAccountManage>img {
+        margin-left: 0;
+    }
+
+    .propBox .propInfo .bankBox .goAccountManage>span {
+        margin-right: 0;
+    }
+
+
+    .propBox .propInfo .bankBox .moneyBox .leftUnit .money {
+        font-size: 2.25rem;
+        margin-top: 0.75rem;
+    }
+
+    .propBox .propInfo .bankBox .moneyBox .leftUnit .unit {
+        font-weight: 400;
+        font-size: var(--size-20);
+        line-height: 140%;
+    }
+
+
+    .propBox .propInfo .bankBox .moneyBox .rightUnit {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .propBox .propInfo .bankBox .moneyBox .rightUnit .mBr {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.1;
+        color: var(--defaultColor);
+    }
+
+    .propBox .propInfo .bankBox .moneyBox .rightUnit .money {
+        font-size: var(--size-18);
+        line-height: 100%;
+    }
+
+
+    .propBox .propInfo .bankBox .activeBox {
+        display: flex;
+        justify-content: space-between;
+        margin-top: var(--size-40);
+    }
+
+    .propBox .propInfo .bankBox .activeBox>div {
+        width: 140px;
+        height: var(--size-40);
+    }
+
+    .propBox .propInfo .bankBox .listBtn {
+        width: 100%;
+        height: var(--size-40);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--defaultColor3);
+        border-radius: 10px;
+        margin-top: 14px;
+    }
+    .propBox .propInfo .bankBox .listBtn>.name {
+        font-size: var(--size-12);
+        font-weight: 500;
+        line-height: 100%;
+        color: var(--defaultColor3);
+    }
+
+    .propBox .propInfo .bankBox .activeBox div>.name {
+        font-size: var(--size-12);
+    }
+
+    .currentBox {
+        padding: 0;
+        width: 100%;
+        margin-top: 3.938rem;
+    }
+
+    .currentBox>.titleBox {
+        flex-direction: column;
+        padding-bottom: var(--size-10);
+        margin-bottom: var(--size-20) !important;
+    }
+
+    .currentBox>.titleBox .title {
+        font-weight: 700;
+        font-size: var(--size-24);
+        line-height: 1.4;
+        margin-bottom: 1rem;
+    }
+
+    .radioBoxFlex {
+        line-height: 1.1;
+        font-size: 0.75rem;
+        color: #000;
+    }
+
+    .radioBoxFlex input {
+        margin-right: 0.25rem;
+    }
+
+    .ingContainer>.title,
+    .endContainer>.title {
+        font-weight: 400;
+        font-size: var(--size-20);
+        line-height: 1.4;
+
+        margin-right: 0;
+    }
+
+    .ingContainer>div:nth-child(1),
+    .endContainer>div:nth-child(1) {
+        flex-basis: 76px;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+    .ingContainer>div:nth-child(2),
+    .endContainer>div:nth-child(2) {
+        padding-left: var(--size-30);
+    }
+
+
+
+
+    /* /////////////////////////////////////////////////////////////////////// */
+    /* /////////////////////////////////////////////////////////////////////// */
+
+    .assetsCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin-bottom: var(--size-20);
+        padding-bottom: var(--size-40);
+
+        border-bottom: 2px solid #eeefef;
+
+        width: 100%;
+    }
+
+
+    .assetsCard .leftBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .assetsCard .leftBox .ethLogo {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .assetsCard .leftBox .ethLogo img {
+        width: var(--size-20);
+        height: var(--size-20);
+    }
+
+    .assetsCard .leftBox .titleBox {
+        display: flex;
+        align-items: center;
+
+        margin-left: 0;
+        margin-top: var(--size-10);
+        margin-bottom: var(--size-14);
+
+    }
+
+    .assetsCard .leftBox .titleBox .title {
+        font-size: var(--size-18);
+        line-height: 100%;
+    }
+
+    .assetsCard .leftBox .titleBox .subTitle {
+        font-weight: 400;
+        font-size: var(--size-12);
+        line-height: 110%;
+        margin-left: var(--size-14);
+    }
+
+    .assetsCard .leftBox .contentsBox .depositBox {
+        margin-left: 0;
+    }
+
+    .assetsCard .leftBox .contentsBox .depositBox>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .assetsCard .leftBox .contentsBox .depositBox div>.title {
+        font-size: var(--size-12);
+        line-height: 110%;
+        margin-left: 0;
+    }
+
+    .assetsCard .leftBox .contentsBox .depositBox div:nth-child(2)>.title {
+        margin-left: var(--size-12);
+    }
+
+    .assetsCard .leftBox .contentsBox .depositBox div>.content {
+        font-size: var(--size-12);
+        line-height: 110%;
+    }
+
+    .assetsCard .rightBox {
+        flex-direction: column;
+        margin-top: var(--size-14);
+    }
+
+    .assetsCard .rightBox .progressBox .titleBox {
+        margin-bottom: 0.5rem;
+        align-items: center;
+    }
+
+    .assetsCard .rightBox .progressBox .titleBox .title {
+        font-size: var(--size-12);
+        line-height: 110%;
+    }
+
+    .assetsCard .rightBox .progressBox .titleBox .content {
+        font-weight: 700;
+        font-size: var(--size-16);
+    }
+
+    .assetsCard .rightBox .progressBox .progressBar {
+        width: 13.375rem;
+        height: 0.5rem;
+
+        margin-bottom: 0.5rem;
+    }
+
+    .assetsCard .rightBox .progressBox .progressBar span.rate {
+        height: 0.5rem;
+    }
+
+    .assetsCard .rightBox .progressBox .dateBox div {
+        font-size: var(--size-12);
+        line-height: 110%;
+    }
+
+
+    .assetsCard .rightBox .detailListButton {
+        margin-top: var(--size-24);
+        padding: 0;
+        justify-content: center;
+        height: var(--size-40);
+        width: 13.375rem;
+
+        font-size: var(--size-12);
+        font-weight: 500;
+        margin-left: 0;
+    }
+
+}

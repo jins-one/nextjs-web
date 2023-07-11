@@ -1,0 +1,317 @@
+.csContainer {
+    padding-block: var(--size-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+}
+.pageTitle {
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.csDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.csItem:nth-child(1){
+    flex-basis: 25%;
+    flex-shrink: 0;
+}
+.csItem:nth-child(2){
+    flex-basis: 75%;
+    flex-shrink: 0;
+    /* width: 77.3rem; */
+}
+
+.itemTab {
+    min-height: 3.375rem;
+    margin-top: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--textColor1);
+
+    cursor: pointer;
+    width: 11.438rem;
+
+    transition: color .1s linear .1s;
+}
+
+
+
+.itemTabActive {
+    font-weight: 700;
+    color: var(--defaultColor);
+}
+
+.goBackDiv {
+    width: 100%;
+    text-align: left;
+}
+
+.goBackBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: fit-content;
+    cursor: pointer;
+}
+
+
+
+.goBackBtn img{
+    transition: transform .1s ease-in-out .1s;
+}
+
+.goBackBtn:hover img{
+    transform: translateX(-10px);
+}
+
+.goBackBtn span {
+    font-size: 0.875rem;
+    color: #b2b2b2;
+
+}
+.postDetail {
+    margin-top: 1.625rem;
+    width: 90%;
+    margin-bottom: 4.5rem;
+    white-space: pre-wrap;
+}
+.postTitle {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.postDate {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.bar {
+    width: 100%;
+    height: 2px;
+    background: #808080;
+    margin-block: 1.5rem;
+}
+
+.postContents {
+    /* width: 90%; */
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 2.1;
+}
+
+.preAndNext {
+    margin-top: 5rem;
+}
+.nextPostDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nextPostDiv > div:nth-child(1) {
+    flex-basis: 10%;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #b2b2b2;
+}
+
+
+
+
+.nextPostDiv > div:nth-child(2) {
+    font-size: 0.875rem;
+    color: #4d4d4d;
+    line-height: 1.4;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.preAndNextWhiteSpace {
+    display:block;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    width: 400px;
+}
+
+.mBr {
+    display: none;
+}
+
+
+@media screen and (max-width:1250px) {
+    .wBr {
+        display: none;
+    }
+    .mBr {
+        display: block;
+    }
+    
+
+    .csContainer {
+        width: 320px;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 55px;
+        padding-top: var(--size-40);
+        padding-bottom: var(--size-100);
+    }
+    .pageTitle {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .tabDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        margin-top: var(--size-24);
+    }
+    .tabNotActice {
+        padding: 0;
+        width: 6rem;
+        height: var(--size-30);
+        font-size: 0.75rem;
+        font-weight: 400;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: -0.02em;
+        text-transform: capitalize;
+    }
+    
+    .tabDiv div:nth-child(1), .tabDiv div:nth-child(2) {
+        margin-right: 0;
+    }
+
+    
+    .tabActice {
+        color: white;
+        background: var(--defaultColor);
+        border-radius: 6.188rem;
+    }
+
+
+    .csDiv {
+        margin-top: 0 !important;
+        flex-direction: column;
+    }
+
+    .csItem:nth-child(1){
+        flex-basis: inherit;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .csItem:nth-child(2){
+        flex-basis: inherit;
+        padding-top: var(--size-30);
+    }
+    
+    .itemTab {
+        height: 2.125rem;
+        width: 5.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: var(--textColor1);
+        margin: 0;
+    }
+    
+    .itemTabActive {
+        font-weight: 700;
+        color: var(--defaultColor);
+    }
+
+
+    .goBackBtn img{
+        margin-right: 0 !important;
+    }
+
+
+    .postDetail {
+        margin-top: 1.125rem;
+        width: 100%;
+        margin-bottom: 0;
+        white-space: pre-wrap;
+    }
+    .postTitle {
+        font-size: 1.125rem;
+        margin-bottom: 0.563rem;
+    }
+    .postDate {
+        font-size: 0.75rem;
+        margin-bottom: 1.063rem;
+    }
+    .bar {
+        margin: 0;
+    }
+    
+    .postContents {
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+    
+    .preAndNext {
+        margin-top: 3rem;
+    }
+
+    .nextPostDiv > div:nth-child(1) {
+        flex-basis: inherit;
+        width: 35px;
+    
+        font-size: 0.75rem;
+        line-height: 1.1;
+        margin-right: 27px;
+    }
+    
+    .nextPostDiv > div:nth-child(2) {
+        font-size: 0.75rem;
+        line-height: 1.1;
+    }
+    
+    .preAndNextWhiteSpace {
+        display:block;
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+        width: 258px;
+    }
+
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .itemTab:hover{
+        color: var(--defaultColor);
+    }
+
+    .goBackBtn:hover span{
+        color: var(--defaultColor3);
+    }
+
+    .nextPostDiv:hover > div:nth-child(1){
+        color: var(--defaultColor);
+    }
+}

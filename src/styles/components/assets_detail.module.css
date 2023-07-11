@@ -1,0 +1,636 @@
+.modal{
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    padding: var(--size-40) 0;
+
+    border: none;
+    border-radius: 10px;
+
+}
+
+.modal:focus{
+    border: none;
+}
+
+.headerBox{
+    display: flex;
+    flex-direction: column;
+
+    padding-left: var(--size-80);
+}
+
+.headerBox .logo{
+    width: calc(var(--size-150) - 8px);
+}
+
+.headerBox .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.headerBox .closeButton{
+    width: var(--size-24);
+    height: var(--size-24);
+
+    position: absolute;
+    top: var(--size-40);
+    right: var(--size-40);
+
+    border: none;
+    background-color: inherit;
+    outline: 0;
+}
+
+.headerBox .closeButton:focus {
+    border: none;
+}
+
+.headerBox .closeButton img{
+    width: 100%;
+    height: 100%;
+}
+
+.dialogContainer {
+    padding-left: calc((var(--size-24) * 10) - 2px);
+    padding-right: calc((var(--size-24) * 10) + 4px);
+}
+
+.dialogContainer .titleBox{
+    padding:0 var(--size-40);
+}
+
+.dialogContainer .titleBox .title{
+    
+    text-align: center;
+
+    font-weight: 800;
+    font-size: var(--size-36);
+    line-height: 120%;
+
+    color: var(--blackColor);
+}
+
+.dialogContainer .contentsBox{
+    width: 620px;
+
+    margin: 0 auto;
+    padding-top: var(--size-40);
+}
+
+.dialogContainer .contentsBox > .statusBox > .status{
+    padding: 0.25rem var(--size-10);
+
+    font-weight: 400;
+    font-size: var(--size-14);
+    line-height: 140%;
+
+    display: inline-block;
+    border-radius: 100px;
+
+    margin-bottom: var(--size-12);
+}
+.dialogContainer .contentsBox > .statusBox > .status[type='true']{
+    border: 1px solid var(--defaultColor);
+    color: var(--defaultColor);
+}
+.dialogContainer .contentsBox > .statusBox > .status[type='false']{
+    border: 1px solid #FF0000;
+    color: #FF0000;
+}
+
+
+.dialogContainer .contentsBox .product{
+    margin-bottom: var(--size-24);
+}
+
+.dialogContainer .contentsBox .product .nameTitle{
+    width: var(--size-80);
+    font-weight: 400;
+    font-size: var(--size-14);
+    color: var(--textColor2);
+
+    line-height: 140%;
+    display: inline-block;
+}
+
+.dialogContainer .contentsBox .product .name{
+    width: calc(var(--size-100) * 3 + var(--size-40));
+    font-weight: 400;
+    font-size: var(--size-18);
+
+    margin-left: var(--size-24);
+
+    color: var(--textColor1);
+
+    display: inline-block;
+}
+
+.dialogContainer .contentsBox .product[type="inList"]{
+    display: flex;
+    align-items: flex-start;
+
+    padding-bottom: var(--size-40);
+
+    border-bottom: 2px solid #B2B2B2;
+
+    /* width: 572px; */
+}
+
+.dialogContainer .contentsBox .product[type="inList"] .nameTitle{
+    margin-top: 4px;
+}
+
+.dialogContainer .contentsBox .product ul.explan{
+    margin-left: var(--size-24);
+}
+
+.dialogContainer .contentsBox .product ul.explan li{    
+
+    width: calc(var(--size-100) * 4 + var(--size-50));
+
+    font-weight: 400;
+    font-size: var(--size-18);
+    line-height: 140%;
+
+    white-space: nowrap;
+
+    margin-bottom: var(--size-12);
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.dialogContainer .contentsBox .product ul.explan li:last-child {
+    margin-bottom: 0;
+}
+
+/* .dialogContainer .contentsBox .product ul.explan li::before{
+    content: '';
+    display: inline-block;
+    
+    background : url('../../../public/images/icon/icon-list-style.png') no-repeat center center;
+    background-size:contain;
+
+    width: var(--size-12);
+    height: calc(var(--size-10) - 1.48px);
+
+    margin-right: calc(var(--size-10) - 4px);
+} */
+
+.dialogContainer .contentsBox .product[type="inInput"]{
+    margin-top: var(--size-24);
+    margin-bottom: 0;
+    display: flex;
+}
+
+.dialogContainer .contentsBox .product[type="profit"]{
+    display: flex;
+    margin-top: var(--size-12);
+    margin-bottom: 0;
+}
+
+.dialogContainer .contentsBox .product[type="inInput"] .nameTitle,
+.dialogContainer .contentsBox .product[type="profit"] .nameTitle{
+    width: calc(var(--size-40) * 2);
+    white-space: nowrap;
+    padding-top: var(--size-16);
+}
+
+.dialogContainer .contentsBox .product[type="inInput"] .depositBox,
+.dialogContainer .contentsBox .product[type="profit"] .profitBox{
+    margin-left: var(--size-24);
+}
+
+.dialogContainer .contentsBox .product[type="inInput"] .depositBox .calcBox,
+.dialogContainer .contentsBox .product[type="profit"] .profitBox .calcBox{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+
+.dialogContainer .contentsBox .product[type="inInput"] .depositBox .calcBox .ethInput,
+.dialogContainer .contentsBox .product[type="profit"] .profitBox .calcBox .ethInput{
+
+    display: flex;
+    align-items: center;
+}
+
+.dialogContainer .contentsBox .product[type="inInput"] .depositBox .calcBox .ethInput .eth,
+.dialogContainer .contentsBox .product[type="profit"] .profitBox .calcBox .ethInput .eth{
+    font-weight: 700;
+    font-size: var(--size-24);
+    line-height: 140%;
+}
+
+.dialogContainer .contentsBox .product[type="profit"] .profitBox .calcBox .ethInput .eth{
+    color: var(--defaultColor);
+}
+
+
+.dialogContainer .contentsBox .product[type="inInput"] .depositBox .calcBox .ethInput .unit,
+.dialogContainer .contentsBox .product[type="profit"] .profitBox .calcBox .ethInput .unit {
+    font-weight: 500;
+    font-size: var(--size-14);
+    line-height: 100%;
+
+    color: #B2B2B2;
+
+    margin-left: .25rem;
+}
+
+.dialogContainer .contentsBox .product[type="inInput"] .depositBox .calcBox>img,
+.dialogContainer .contentsBox .product[type="profit"] .profitBox .calcBox>img{
+    margin: 0 var(--size-24);
+    width: var(--size-12);
+    height: 100%;
+}
+
+.dialogContainer .contentsBox .product[type="inInput"] .depositBox .calcBox .transUnit,
+.dialogContainer .contentsBox .product[type="profit"] .profitBox .calcBox .transUnit{
+    display: flex;
+    align-items: center;
+}
+
+.dialogContainer .contentsBox .product[type="inInput"] .depositBox .calcBox .transUnit .krw,
+.dialogContainer .contentsBox .product[type="profit"] .profitBox .calcBox .transUnit .krw{
+    font-weight: 500;
+    font-size: var(--size-18);
+    line-height: 100%;
+
+    border: none;
+    background-color: transparent;
+
+    color: var(--textColor2);
+}
+
+
+.dialogContainer .contentsBox .product[type="inInput"] .depositBox .calcBox .transUnit .unit,
+.dialogContainer .contentsBox .product[type="profit"] .profitBox .calcBox .transUnit .unit{
+    font-weight: 500;
+    font-size: var(--size-14);
+    line-height: 100%;
+
+    margin-left: .25rem;
+
+    color: #B2B2B2;
+}
+
+.dialogContainer .contentsBox .product[type="inInput"] .depositBox .earningsBox{
+    margin-top: var(--size-12);
+}
+
+.dialogContainer .contentsBox .product[type="inInput"] .depositBox .earningsBox .earnings>.title{
+    font-weight: 500;
+    font-size: var(--size-14);
+    line-height: 100%;
+
+    color: var(--defaultColor);
+}
+
+.dialogContainer .contentsBox .product[type="inInput"] .depositBox .earningsBox .earnings>.result{
+    font-weight: 500;
+    font-size: var(--size-14);
+    line-height: 100%;
+
+    color: var(--defaultColor);
+
+    margin-left: var(--size-40);
+}
+
+.dialogContainer .contentsBox .product[type="inInput"] .depositBox .earningsBox .infoText{
+    font-weight: 500;
+    font-size: var(--size-14);
+    line-height: 120%;
+
+    margin-top: var(--size-6);
+
+    color: var(--textColor2);
+}
+
+.dialogContainer .contentsBox .product[type='profit'] ul.guide li{    
+
+    width: calc(var(--size-100) * 4 + var(--size-50));
+
+    font-size: var(--size-14);
+    line-height: 120%;
+
+    white-space: nowrap;
+    
+    color: var(--textColor2);
+
+    margin-top: var(--size-12);
+}
+
+
+.dialogContainer .contentsBox .product[type='profit'] ul.guide li::before{
+    content: '*';
+    display: inline-block;
+}
+
+
+
+.dialogContainer .buttonBox{
+    width: 620px;
+    padding-top: var(--size-50);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialogContainer .buttonBox > div{
+    height: var(--size-50);
+
+    cursor: pointer;
+    border-radius: 10px;
+
+    font-weight: 400;
+    font-size: var(--size-14);
+    line-height: 140%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialogContainer .buttonBox .close{
+    width: calc(var(--size-150) + var(--size-6));
+    background: var(--whiteColor);
+    border: 2px solid var(--textColorGray1);
+}
+
+.dialogContainer .buttonBox .done{
+
+    width: calc(var(--size-44) * 10);
+
+    background: var(--defaultColor);
+
+    border: none;
+
+    color: var(--whiteColor);
+}
+
+
+.detailBox {
+    width: 100%;
+    border-radius: 0.625rem;
+    background-color: #f6f7f9;
+    padding: var(--size-20) var(--size-24);
+    margin-top: var(--size-20);
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+.detailBox .detailFlexBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.detailBox .detailFlexBox > div:nth-child(1) {
+    flex-basis: 20%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.detailBox .detailFlexBox .title {
+    font-size: 0.875rem;
+    color: #808080;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.detailBox .detailFlexBox .explan {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+}
+.detailBox .detailFlexBox .explan > div:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.detailBox .detailFlexBox .explan > .eth {
+    margin-left: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #B2B2B2;
+}
+
+.detailBox .detailFlexBox .expectedReturn {
+    margin-top: calc(var(--size-20) + 2px);
+    font-size: 0.875rem;
+    color: var(--defaultColor);
+    font-weight: 500;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.detailBox .detailFlexBox .expectedReturn > div:nth-child(1) {
+    margin-right: 0.625rem;
+}
+
+.detailBox .detailFlexBox .desc {
+    margin-top: 0.375rem;
+    color: #808080;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.detailBox .detailFlexBox .expectedReturn2.mt6 {
+    margin-top: 6px;
+}
+.detailBox .detailFlexBox .expectedReturn2 {
+    margin-top: var(--size-20);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #808080;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.detailBox .detailFlexBox .expectedReturn2 > div:nth-child(1) {
+    flex-basis: 20%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.detailBox .detailFlexBox .expectedReturn2 > div:nth-child(2) {
+    color: #1a1a1a;
+}
+
+.mBr {
+    display: none;
+}
+
+
+@media screen and (max-width:1250px) {
+    .wBr {
+        display: none;
+    }
+
+    .mBr {
+        display: block;
+    }
+
+    .modal {
+        padding: 0;
+        border-radius: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerBox {
+        display: flex;
+        flex-direction: column;
+    
+        padding-left: var(--size-80);
+    }
+    
+    .headerBox .logo {
+        display: none;
+    }
+    
+    .headerBox .closeButton {
+        width: var(--size-18);
+        height: var(--size-18);
+
+        top: var(--size-20);
+        left: var(--size-20);
+        right: inherit;
+    }
+    
+    .headerBox .closeButton img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .dialogContainer {
+        padding: 0;
+        padding-bottom: var(--size-50);
+    }
+    
+    .dialogContainer .titleBox {
+        padding: 0.785rem 0;
+    }
+    
+    .dialogContainer .titleBox .title {
+        font-weight: 700;
+        font-size: var(--size-24);
+        line-height: 140%;
+    }
+    
+    .dialogContainer .contentsBox {
+        width: 320px;
+        margin: 0 auto;
+        padding: 0;
+        padding-top: var(--size-40);
+    }
+
+
+    .dialogContainer .contentsBox > .statusBox > .status{
+        font-size: var(--size-12);
+        line-height: 110%;
+    
+        margin-bottom: var(--size-10);
+    }
+
+    .dialogContainer .contentsBox .product{
+        margin-bottom: var(--size-12);
+    }
+    
+    .dialogContainer .contentsBox .product .name{
+        width: 216px;
+        font-size: var(--size-14);
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+
+    .dialogContainer .contentsBox .product[type="inList"]{
+        padding-bottom: 2.375rem;
+        margin-bottom: var(--size-24);
+    }
+    
+    .dialogContainer .contentsBox .product[type="inList"] .nameTitle{
+        margin-top: 0;
+    }
+    
+    .dialogContainer .contentsBox .product ul.explan{
+        width: 216px;
+        margin-left: var(--size-24);
+    }
+    
+    .dialogContainer .contentsBox .product ul.explan li{    
+        width: 100%;
+        font-size: var(--size-14);
+        white-space: pre-wrap;
+    }
+    
+    .dialogContainer .buttonBox{
+        width: 320px;
+        padding-top: var(--size-40);
+    }
+    
+    .dialogContainer .buttonBox > div{
+        height: var(--size-40);
+        font-size: var(--size-12);
+    }
+    
+    .dialogContainer .buttonBox .close{
+        width: 5.938rem;
+    }
+    
+    .dialogContainer .buttonBox .done{
+        width: 13.063rem;
+    }
+
+
+
+    .detailBox {
+        padding: var(--size-20) var(--size-12);
+        margin-top: 0;
+    }
+
+    .detailBox .detailFlexBox > div:nth-child(1) {
+        flex-basis: 35%;
+    }
+
+    
+    .detailBox .detailFlexBox .expectedReturn {
+        margin-top: var(--size-20);
+        font-weight: 400;
+    }
+    .detailBox .detailFlexBox .expectedReturn > div:nth-child(1) {
+        margin-right: 0.875rem;
+    }
+    
+    .detailBox .detailFlexBox .desc {
+        margin-top: 0.75rem;
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 1.1;
+    }
+    
+    .detailBox .detailFlexBox .expectedReturn2.mt6 {
+        margin-top: 4px;
+    }
+    .detailBox .detailFlexBox .expectedReturn2 {
+        font-weight: 400;
+    }
+    .detailBox .detailFlexBox .expectedReturn2 > div:nth-child(1) {
+        flex-basis: 35%;
+    }
+    
+}

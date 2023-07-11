@@ -1,0 +1,1090 @@
+.loginContainer {
+    padding-top: var(--size-90);
+    padding-bottom: 11.25rem;
+    letter-spacing: -0.02em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.accountTitle {
+    font-size: 2.625rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.accountSubTitle {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.loginBox {
+    margin-top: 3.75rem;
+    border: 2px solid #b2b2b2;
+    border-radius: 0.625rem;
+    padding: 4.375rem 2.5rem 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultBox {
+    width: 43.75rem;
+    margin-top: var(--size-100);
+    border: 2px solid #b2b2b2;
+
+    border-radius: 0.625rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 13.75rem;
+    height: auto;
+    margin-bottom: 6.25rem;
+}
+
+.logo2 {
+    width: 8.875rem;
+    height: auto;
+}
+
+.inputDiv {
+    width: 38.75rem;
+
+}
+
+.inputLabel {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.inputLabel2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputDiv>input {
+    width: 100%;
+    border: 2px solid #d4d4d4;
+    border-radius: 0.625rem;
+    padding: 0.875rem 1.5rem;
+
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.loginBtn {
+    width: 100%;
+    padding-block: 0.875rem;
+    text-align: center;
+    color: white;
+    background: var(--defaultColor);
+    border-radius: 0.625rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    cursor: pointer;
+
+    /* margin-bottom: 5rem; */
+}
+
+.loginBtn2 {
+    width: 100%;
+    background-color: var(--defaultColor);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+
+.findDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.findItem {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.bar {
+    width: 0.125rem;
+    height: 1.125rem;
+    background: #808080;
+    margin-inline: 1.5rem;
+}
+
+.findItem>div:nth-child(1) {
+    font-size: 1.125rem;
+    color: #b2b2b2;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.findItemText {
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/*****************************/
+
+.findEmailContainer {
+    padding-top: 5.625rem;
+    padding-bottom: 11.25rem;
+    letter-spacing: -0.02em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.inputBox {
+    margin-top: var(--size-66);
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.signinEmail.inputBox {
+    margin-top: var(--size-100);
+}
+
+.selectBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selectBox select,
+.selectBox input,
+.authBtn,
+.authDoneBtn,
+.cancelBtn,
+.loginBtn2,
+.infoBox input {
+    border-radius: 0.625rem;
+    padding-block: 0.875rem;
+}
+
+.selectBox select,
+.authBtn,
+.authDoneBtn,
+.cancelBtn,
+.loginBtn2 {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--size-50);
+}
+
+.phoneAuthDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.findEmail .phoneAuthDiv {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.phoneAuthDiv>div:nth-child(1) {
+    /* margin-right: 2rem; */
+}
+
+.btnDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.75rem;
+}
+
+.cancelBtn {
+    width: 9.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #b2b2b2;
+}
+
+.authBtn {
+    background-color: var(--defaultColor);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+
+.authDoneBtn {
+    background-color: #b2b2b2;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.selectBox select,
+.selectBox input,
+.infoBox input {
+    border: 2px solid #b2b2b2;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.selectBox select,
+.selectBox input,
+.infoBox input {
+    padding-left: 1.5rem;
+    padding-right: 2.813rem;
+}
+
+.alertDiv {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 0.75rem;
+}
+
+.alertDiv>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.resultText {
+    margin-top: 5rem;
+    margin-bottom: 3.125rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    text-align: center;
+    line-height: 1.4;
+}
+
+.resultText span {
+    font-weight: 700;
+}
+
+.idDiv {
+    width: 34.5rem;
+    margin-bottom: var(--size-50);
+    display: flex;
+    align-items: center;
+}
+
+.idDiv>span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.pwDesc {
+    margin-bottom: 2.875rem;
+    font-size: 1rem;
+    color: #808080;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+
+/********************************/
+
+.checkDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 67.5rem;
+}
+
+.bar2 {
+    width: 100%;
+    height: 2px;
+    background: #eeefef;
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.checkDiv>label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.checkDiv input {
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: var(--defaultColor);
+    margin-right: 0.75rem;
+}
+
+
+
+
+
+
+.infoBox {
+    width: 67.5rem;
+    border-top: 1px solid #B2B2B2;
+    border-bottom: 1px solid #B2B2B2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infoBox>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.infoBoxTitle {
+    height: 100%;
+    width: 18.75rem;
+    padding-block: 2.063rem;
+    text-align: center;
+
+    background-color: #F6F7F9;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.infoBoxCont {
+    padding-block: 0.75rem;
+    padding-inline: 1.5rem;
+
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.4;
+
+    margin-left: 18.75rem;
+}
+
+.addressModi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.addressModi>.btn {
+    border: 2px solid #B2B2B2;
+    border-radius: 0.375rem;
+    padding: 0.938rem 1.5rem;
+    cursor: pointer;
+}
+
+.addressModi>span {
+    margin-inline: 0.313rem;
+}
+
+.emailBtn {
+    width: 7.313rem;
+    cursor: pointer;
+    border-radius: 0.375rem;
+    padding-block: 0.875rem;
+    border: 1px solid var(--defaultColor);
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--defaultColor);
+    margin-left: 0.75rem;
+}
+
+.emailBtn:hover {
+    background-color: var(--defaultColor);
+    color: white;
+}
+
+.emailDoneBtn {
+    width: 7.313rem;
+    border-radius: 0.375rem;
+    padding-block: 0.875rem;
+    background-color: #b2b2b2;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    margin-left: 0.75rem;
+}
+
+.descText {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #808080;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.infoBoxTitle>span {
+    color: var(--defaultColor);
+}
+
+.iinput {
+    width: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputInheritBtn {
+    position: absolute;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+.phoneInput {
+    padding-inline: 0 !important;
+    text-align: center;
+}
+
+.birthText {
+    margin-inline: 0.688rem;
+    font-size: 1rem;
+    color: #808080;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.inputEmpty {
+    position: absolute;
+    right: 2rem;
+    width: fit-content;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.withdrawalWarning {
+    width: 100%;
+    border: 2px solid #B2B2B2;
+    border-radius: 0.625rem;
+    padding: 1.063rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.91;
+}
+
+.withdrawalWarning li {
+    list-style: '•';
+    padding-inline-start: 10px;
+}
+
+.checkBox {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+
+    display: flex;
+    align-items: center;
+}
+
+.checkBox input {
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: var(--defaultColor);
+    margin-right: 0.75rem;
+}
+
+.authBtn2 {
+    border: 1px solid var(--defaultColor3);
+    border-radius: 0.625rem;
+    color: var(--defaultColor3);
+    height: var(--size-50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.authBtn2:hover {
+    background-color: var(--defaultColor3);
+    color: white;
+}
+
+.subText {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #808080;
+    margin-top: 1.5rem;
+}
+
+.mBr {
+    display: none;
+}
+
+.warningText {
+    color: #ff0000;
+    font-size: 0.875rem;
+    font-weight: 400;
+    width: 67.5rem;
+    text-align: right;
+    margin-bottom: 0.75rem;
+}
+
+.mobileBirth {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.withdrawPw {
+    margin-bottom: 2.188rem;
+}
+
+.withdrawPwDesc {
+    margin-top: 0.75rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #808080;
+    line-height: 1.4;
+}
+
+.newPasswd .authBtn.phone {
+    height: var(--size-50);
+    border: 2px solid var(--defaultColor3);
+    color: var(--defaultColor3);
+    background-color: white;
+}
+
+.newPasswd .authBtn.phone:hover {
+    color: white;
+    background-color: var(--defaultColor);
+    border: none;
+}
+
+.recaptchaDisc {
+    width: 100%;
+    text-align: center;
+    margin-top: 12px;
+
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: -0.32px;
+    color: #808080;
+}
+.recaptchaDisc > a {
+    color: #5683F7;
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width:1250px) {
+    .mBr {
+        display: block;
+    }
+
+    .wBr {
+        display: none;
+    }
+
+
+    .loginContainer {
+        width: 320px;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 55px;
+
+        padding-top: var(--size-60);
+        padding-bottom: var(--size-40);
+    }
+
+    .loginContainer .accountTitle {
+        display: none;
+    }
+
+    .loginContainer .loginBox {
+        margin-top: 0;
+        width: 100%;
+        padding: 3rem var(--size-30);
+    }
+
+    .loginContainer .loginBox .logo {
+        width: 96px;
+        height: auto;
+        margin-bottom: 2.625rem;
+    }
+
+    .loginContainer .loginBox .inputDiv {
+        width: 100%;
+    }
+
+    .loginContainer .loginBox .inputDiv input {
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+
+    .loginContainer .loginBox .inputDiv .inputLabel {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 0.25rem;
+    }
+
+    .loginContainer .loginBox .inputDiv:nth-child(2) {
+        margin-bottom: 1.625rem !important;
+    }
+
+    .loginContainer .loginBox .inputDiv:nth-child(3) {
+        margin-bottom: 1.375rem !important;
+    }
+
+    .loginContainer .loginBox .findDiv {
+        margin-bottom: 1.375rem !important;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .loginContainer .loginBox .findDiv .findItem {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .loginContainer .loginBox .findDiv .findItem .bar {
+        margin-inline: 0.688rem;
+    }
+
+    .loginContainer .loginBox .findDiv .findItem>div:nth-child(1) {
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+    }
+
+    .loginContainer .loginBox .findDiv .findItem .findItemText {
+        font-size: 0.875rem;
+    }
+
+    .loginContainer .loginBox .findDiv .findItem:nth-child(2) {
+        margin-top: 1.375rem;
+    }
+
+    .loginContainer .loginBox .findDiv .findItem:nth-child(2)>div:nth-child(2) {
+        text-align: left !important;
+    }
+
+    .loginContainer .loginBox .loginBtn {
+        padding-block: 0.719rem;
+        font-size: 0.75rem;
+    }
+
+    .loginBtn2 {
+        width: 15rem;
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+
+
+    .findEmailContainer {
+        width: 320px;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 55px;
+
+        min-height: calc(100vh - 55px -615.38px) !important;
+        padding-top: 2.063rem;
+        padding-bottom: 3.563rem;
+    }
+
+    .accountTitle {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .accountSubTitle {
+        margin-top: 0.563rem;
+        font-size: 0.75rem;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .inputBox,
+    .signinEmail.inputBox {
+        margin-top: 2.75rem;
+        width: 100%;
+    }
+
+    .inputDiv {
+        width: 100% !important;
+    }
+
+    .inputLabel2 {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 0.25rem;
+    }
+
+    .beforeWithdrawal.inputLabel2 {
+        font-size: 0.938rem;
+        margin-bottom: 0.563rem;
+    }
+
+    .selectBox select,
+    .selectBox input,
+    .infoBox input {
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+
+    .findEmailContainer .email.inputDiv,
+    .findEmailContainer .pw.inputDiv {
+        margin-bottom: 1.688rem !important;
+    }
+
+    .phoneAuthDiv {
+        flex-direction: column;
+    }
+
+    .selectBox .telecom {
+        width: 100% !important;
+        margin-right: 0 !important;
+    }
+
+    .selectBox {
+        flex-direction: column;
+    }
+
+    .phoneAuthDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        /* margin-top: var(--size-10); */
+    }
+
+    .btnDiv {
+        margin-top: 2.063rem !important;
+    }
+
+    .cancelBtn {
+        width: 5.016rem !important;
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+
+    .authBtn {
+        font-size: 0.75rem;
+        font-weight: 400;
+        width: 14.194rem !important;
+    }
+
+    .authBtn2 {
+        width: 6rem !important;
+        font-size: 0.75rem;
+        line-height: 1;
+    }
+
+    .authBtn.phone {
+        width: 6rem !important;
+        height: var(--size-50);
+        border: 2px solid var(--defaultColor3);
+        color: var(--defaultColor3);
+        background-color: white;
+    }
+
+    .authDoneBtn {
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+
+    .alertDiv {
+        margin-top: 0.438rem;
+    }
+
+    .alertDiv>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .alertDiv>div img {
+        margin-right: 0.375rem !important;
+        width: 20px;
+        height: auto;
+    }
+
+    .alertDiv>div:nth-child(1)>span:nth-child(2) {
+        font-size: 0.875rem !important;
+        font-weight: 400 !important;
+    }
+
+    .alertDiv>div:nth-child(2)>div:nth-child(1) {
+        display: none;
+    }
+
+    .alertDiv>div:nth-child(2)>span:nth-child(2) {
+        margin-top: 0.5rem !important;
+        font-size: 0.813rem !important;
+    }
+
+
+    .resultBox {
+        width: 100%;
+        margin-top: 2.063rem;
+
+        padding-block: 4.25rem;
+        padding-inline: var(--size-20);
+    }
+
+    .resultBox .logo2 {
+        width: 6rem;
+    }
+
+    .resultText {
+        margin-block: var(--size-50);
+        font-size: 0.875rem;
+
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .resultText span {
+        font-weight: 500;
+    }
+
+    .idDiv {
+        width: 100%;
+        margin-bottom: 2.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .idDiv>span {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .idDiv>span:nth-child(2) {
+        margin-top: 0.813rem;
+    }
+
+    .pwDesc {
+        margin-bottom: 1.688rem;
+        font-size: 0.75rem;
+        line-height: 1.2;
+    }
+
+
+    .checkDiv {
+        width: 100%;
+    }
+
+    .bar2 {
+        margin-top: 0.375rem;
+        margin-bottom: 1.375rem;
+    }
+
+    .checkDiv>label {
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1;
+
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .inputBox>.checkDiv:nth-child(1) label {
+        font-size: 1rem;
+    }
+
+    .checkDiv input {
+        margin-right: 0.625rem;
+    }
+
+    .year19Over {
+        font-size: 0.75rem !important;
+        align-items: center !important;
+    }
+
+
+    .signinEmail.inputBox .emailAuth {
+        width: 13rem !important;
+    }
+
+    .signinEmail.inputBox .selectBox {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .subText {
+        font-size: 0.75rem;
+        line-height: 1.3;
+        margin-top: 1.25rem;
+    }
+
+    .warningText {
+        font-size: 0.75rem;
+        width: 100%;
+        margin-bottom: 0.625rem;
+    }
+
+
+    .infoBox {
+        width: 100%;
+    }
+
+    .infoBoxTitle {
+        height: 100%;
+        width: 6rem;
+        padding-block: 1.563rem;
+
+        font-size: 0.875rem;
+    }
+
+    .infoBoxCont {
+        padding-block: 0.625rem;
+        padding-left: 1rem;
+        padding-right: 0;
+
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.4;
+
+        margin-left: 6rem;
+    }
+
+    .infoBoxTitle>span {
+        color: var(--defaultColor);
+    }
+
+    .iinput input,
+    .birthSelect>select:nth-child(1) {
+        width: 13rem !important;
+    }
+
+    .descText {
+        font-size: 0.75rem;
+        margin-top: 0.938rem;
+        margin-bottom: 0;
+    }
+
+    .mobileBirth {
+        margin-top: var(--size-10);
+        width: 13rem;
+    }
+
+    .withdrawPw {
+        margin-bottom: 0.875rem;
+    }
+
+    .withdrawPwDesc {
+        margin-top: 0.625rem;
+        font-size: 0.75rem;
+    }
+
+    .withdrawalWarning {
+        padding: 1.406 1.5rem;
+        font-size: 0.75rem;
+        line-height: 1.91;
+    }
+
+
+
+    .selectBox select,
+    .selectBox input,
+    .infoBox input {
+        padding-block: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: var(--size-50);
+    }
+
+    .authBtn,
+    .authDoneBtn,
+    .cancelBtn,
+    .loginBtn2 {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: var(--size-40);
+    }
+
+
+    .newPasswd .infoBoxCont,
+    .newPasswd .birthSelect.selectBox {
+        width: 100%;
+    }
+    .newPasswd .birthSelect.selectBox > select:nth-child(1) {
+        width: 7rem !important;
+    }
+    .newPasswd .birthSelect.selectBox .mobileBirth {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 5px;
+    }
+    .newPasswd .birthSelect.selectBox .mobileBirth > select {
+        width: 6.25rem;
+    }
+
+    .newPasswd .email.selectBox {
+        flex-direction: row;
+    }
+
+    .newPasswd .addressModi .selectBox{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .recaptchaDisc {
+        width: 100%;
+        text-align: left;
+        margin-top: 12px;
+    
+        font-size: 0.75rem;
+        line-height: 1.4;
+        letter-spacing: -0.32px;
+        color: #808080;
+    }
+}

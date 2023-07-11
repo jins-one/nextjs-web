@@ -1,0 +1,196 @@
+.inquiryBox {
+    background: #f6f7f9;
+    border-radius: 0.625rem;
+    padding: 1.5rem 2rem;
+    width: 50rem;
+
+    /* transition: box-shadow .3s ease .05s; */
+}
+
+/* .inquiryBox:hover{
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.2);
+} */
+
+.typeBedge {
+    color: white;
+    background: var(--defaultColor);
+    padding: 0.5rem 0.625rem;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    font-weight: 400;
+
+    width: fit-content;
+    border-radius: 6.25rem;
+}
+
+.answerBedge {
+    padding: 0.5rem 0.625rem;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    font-weight: 400;
+
+    width: fit-content;
+    border-radius: 6.25rem;
+    border: 1px solid var(--defaultColor);
+    color: var(--defaultColor);
+}
+
+
+.inquiryTitle {
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+
+.dateDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+
+    margin-top: 2rem;
+}
+
+.dateDiv>div:nth-child(1) {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+    width: fit-content;
+}
+
+.dateDiv>div:nth-child(2) {
+    font-size: 0.875rem;
+
+    font-weight: 400;
+    line-height: 1.4;
+    padding: 0.25rem 0.625rem;
+
+    border-radius: 6.25rem;
+}
+
+.answerDone {
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+.answerWait {
+    color: #808080;
+    border: 1px solid #808080;
+}
+
+.contentsDiv {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+}
+
+.attachedFileDiv {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fileCount {
+    font-size: 0.875rem;
+    color: #808080;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+}
+
+.fileContents {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    font-weight: 400;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.inputContents {
+    margin-top: 1.5rem;
+}
+
+.saveBtn,
+.modifyBtn,
+.cancleBtn {
+    height: var(--size-40);
+    border-radius: 0.625rem;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 2.5rem;
+}
+
+.modifyBtn {
+    color: var(--defaultColor3);
+    border: 1px solid var(--defaultColor3);
+}
+
+.saveBtn {
+    color: white;
+    background-color: var(--defaultColor);
+    width: 500px;
+}
+
+.modifyBtn:hover {
+    color: white;
+    background-color: var(--defaultColor3);
+}
+
+.btnDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cancleBtn {
+    border: 1px solid #b2b2b2;
+    width: 200px;
+}
+
+
+
+@media screen and (max-width:1250px) {
+    .inquiryBox {
+        padding: 1.5rem 2rem;
+        width: 100%;
+    }
+
+    .inquiryBox>div:nth-child(1) {
+        margin-bottom: 0.625rem !important;
+    }
+
+    .typeBedge {
+        padding: 0.188rem 0.5rem;
+        font-size: 0.563rem;
+    }
+
+    .answerBedge {
+        padding: 0.188rem 0.5rem;
+        font-size: 0.563rem;
+    }
+
+    .inquiryTitle {
+        font-size: 0.875rem;
+    }
+    
+    .dateDiv {
+        margin-top: 0.875rem;
+    }
+    
+    .dateDiv>div:nth-child(1) {
+        font-size: 0.75rem;
+    }
+    
+    .dateDiv>div:nth-child(2) {
+        font-size: 0.625rem;
+        padding: 0.25rem 0.625rem;
+    }
+    
+    .contentsDiv {
+        margin-top: 0.875rem;
+        font-size: 0.75rem;
+    }
+}

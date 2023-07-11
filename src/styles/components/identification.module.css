@@ -1,0 +1,244 @@
+.modal,
+.modal2 {
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    padding: var(--size-40) 0;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.modal:focus,
+.modal2s:focus {
+    border: none;
+}
+
+.headerBox {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: calc(var(--size-100) - var(--size-10));
+}
+
+.headerBox .logo {
+    width: calc(var(--size-150) - 8px);
+}
+
+.headerBox .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.headerBox .closeButton {
+    width: var(--size-24);
+    height: var(--size-24);
+
+    position: absolute;
+    top: var(--size-40);
+    right: var(--size-40);
+    cursor: pointer;
+
+    border: none;
+    background-color: inherit;
+    outline: 0;
+}
+
+.headerBox .closeButton img {
+    width: 100%;
+    height: 100%;
+}
+
+.dialogContainer .titleBox {
+    padding-bottom: var(--size-40);
+}
+
+.dialogContainer .titleBox .title {
+    text-align: center;
+    font-weight: 800;
+    font-size: var(--size-36);
+    line-height: 120%;
+
+    color: var(--blackColor);
+}
+
+.dialogContainer .contentsBox {
+    width: 100%;
+    padding: 0 calc(var(--size-100) * 2 + var(--size-20));
+    padding-top: var(--size-40);
+}
+
+
+
+.btnDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.75rem;
+}
+
+.authBtn {
+    color: white;
+    background-color: var(--defaultColor);
+    font-size: 0.875rem;
+    height: var(--size-50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    border-radius: 0.625rem;
+    width: 27.5rem;
+}
+.cancelBtn {
+    width: 9.75rem;
+    height: var(--size-50);
+    font-size: 0.875rem;
+    font-weight: 400;
+    cursor: pointer;
+    border: 2px solid #b2b2b2;
+    border-radius: 0.625rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ckMainBox{
+    padding: 0px 10px 0px 10px;
+    overflow-x: hidden;
+    border-radius: 0.625rem !important;
+    border: 2px solid #b2b2b2 !important;
+    overflow-y: scroll;
+    height: 34.375rem;
+}
+
+
+.closeBtn {
+    color: white;
+    background-color: var(--defaultColor);
+    font-size: 0.875rem;
+    height: var(--size-50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: var(--size-20);
+
+    border-radius: 0.625rem;
+    width: 100%;
+}
+
+
+@media screen and (max-width:1250px) {
+    dialog.modal {
+        padding: 31px 20px;
+
+        min-width: 320px;
+        min-height: 570px;
+    }
+
+    dialog.modal2 {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        border-radius: 0;
+
+    }
+
+    .headerBox {
+        display: flex;
+        flex-direction: column;
+
+        padding-left: var(--size-80);
+    }
+
+    
+    .headerBox .closeButton {
+        width: var(--size-18);
+        height: var(--size-18);
+
+        top: var(--size-20);
+        left: var(--size-20);
+        right: inherit;
+    }
+
+    .headerBox .closeButton img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerBox[type='pp'] {
+
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .headerBox .logo {
+        display: none;
+    }
+
+    .headerBox .logo[type='pp'] {
+        display: block;
+        width: 74px;
+        height: auto;
+    }
+
+    .headerBox .closeButton[type='pp'] {
+        display: none;
+    }
+
+
+    .dialogContainer .titleBox {
+        padding: 0.785rem 0;
+    }
+    
+    .dialogContainer .titleBox .title{
+        font-size: var(--size-24);
+        line-height: 1.4;
+    }
+    .dialogContainer .titleBox[type='pp'] {
+        padding: 15px 0;
+    }
+
+    .dialogContainer .titleBox[type='pp'] .title{
+        font-size: var(--size-18);
+    }
+
+    .dialogContainer .contentsBox {
+        width: 320px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .ckMainBox{
+        height: 382px;
+    }
+
+    .closeBtn {
+        font-size: 0.75rem;
+        height: var(--size-40);
+    }
+
+    .authBtn {
+        font-size: 0.75rem;
+        height: var(--size-40);
+        width: 13.063rem;
+    }
+
+    .cancelBtn {
+        width: 5.938rem;
+        height: var(--size-40);
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+
+    .identi.ckMainBox {
+        margin-top: var(--size-40);
+    }
+}

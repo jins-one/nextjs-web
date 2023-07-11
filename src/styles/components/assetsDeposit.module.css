@@ -1,0 +1,384 @@
+.modal {
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    padding: var(--size-40) 0;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.modal:focus {
+    border: none;
+}
+
+.headerBox {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: var(--size-80);
+}
+
+.headerBox .logo {
+    width: calc(var(--size-150) - 8px);
+}
+
+.headerBox .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.headerBox .closeButton {
+    width: var(--size-24);
+    height: var(--size-24);
+
+    position: absolute;
+    top: var(--size-40);
+    right: var(--size-40);
+
+    border: none;
+    background-color: inherit;
+    outline: 0;
+}
+
+.headerBox .closeButton img {
+    width: 100%;
+    height: 100%;
+}
+
+.dialogContainer .titleBox {
+    padding: var(--size-40) 0;
+}
+
+.dialogContainer .titleBox .title {
+
+    text-align: center;
+
+    font-weight: 800;
+    font-size: var(--size-36);
+    line-height: 120%;
+
+    color: var(--blackColor);
+}
+
+.dialogContainer .contentsBox {
+    width: 100%;
+    padding: 0 calc(var(--size-100) * 2 + var(--size-20));
+}
+
+.dialogContainer .contentsBox .product {
+    width: var(--size-649);
+    display: flex;
+    flex-direction: column;
+}
+
+.dialogContainer .qrCover {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--size-12);
+
+    border: 2px solid #EEEFEF;
+    border-radius: 10px;
+}
+
+.dialogContainer .qrCover svg {
+    height: auto;
+    width: 188.6px;
+    max-height: 185.7;
+}
+
+.dialogContainer .contentsBox .boxTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.dialogContainer .contentsBox .inputInfo {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--defaultColor);
+}
+
+.dialogContainer .addrssInput {
+    width: calc(var(--size-100) * 4 + var(--size-80));
+    height: var(--size-50);
+
+    border: 2px solid #D4D4D4;
+    border-radius: 10px;
+    padding: var(--size-14) var(--size-24);
+
+    
+    font-weight: 400;
+    line-height: 140%;
+
+    color: var(--textColorGray1);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    background-color: var(--whiteColor);
+
+}
+
+.dialogContainer .copyBtn {
+    width: calc(var(--size-100) + var(--size-28));
+    height: var(--size-50);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: var(--defaultColor);
+
+    font-weight: 400;
+    font-size: var(--size-14);
+    line-height: 140%;
+
+    color: var(--whiteColor);
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.rowAlignCenter {
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dialogContainer .warringInfoBox {
+    width: var(--size-649);
+    padding: var(--size-24);
+    display: flex;
+    flex-direction: column;
+
+    color: var(--textColor6);
+
+    background-color: var(--textColorGray3);
+    border-radius: 10px;
+}
+
+.dialogContainer .warringInfoBox p {
+    /* font-style: normal; */
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.dialogContainer .warringInfoBox li {
+    list-style: disc !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    margin-left: var(--size-24);
+}
+
+.mt40{
+    margin-top: var(--size-40);
+}
+
+.mt80{
+    margin-top: var(--size-80);
+}
+.mt12{
+    margin-top: var(--size-12);
+}
+.mt24{
+    margin-top: var(--size-24);
+}
+.mt16{
+    margin-top: var(--size-16);
+}
+.mt14{
+    margin-top: var(--size-14);
+}
+
+
+.dialogContainer .buttonBox{
+    margin-top: var(--size-50);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialogContainer .buttonBox > button{
+    height: var(--size-50);
+
+    cursor: pointer;
+    border-radius: 10px;
+
+    font-weight: 400;
+    font-size: var(--size-14);
+    line-height: 140%;
+    
+}
+
+.dialogContainer .buttonBox .close{
+    width: calc(var(--size-150) + var(--size-6));
+    background: var(--whiteColor);
+    border: 2px solid var(--textColorGray1);
+}
+
+.dialogContainer .buttonBox .done{
+
+    width: calc(var(--size-44) * 10);
+
+    background: var(--defaultColor);
+
+    border: none;
+
+    color: var(--whiteColor);
+}
+
+
+
+@media screen and (max-width:1250px) {
+    .modal {
+        padding: 0;
+        border-radius: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerBox {
+        display: flex;
+        flex-direction: column;
+    
+        padding-left: var(--size-80);
+    }
+    
+    .headerBox .logo {
+        display: none;
+    }
+    
+    .headerBox .closeButton {
+        width: var(--size-18);
+        height: var(--size-18);
+
+        top: var(--size-20);
+        left: var(--size-20);
+        right: inherit;
+    }
+    
+    .headerBox .closeButton img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .dialogContainer .titleBox {
+        padding: 0.785rem 0;
+    }
+    
+    .dialogContainer .titleBox .title {
+        font-weight: 700;
+        font-size: var(--size-24);
+        line-height: 140%;
+    }
+    
+    .dialogContainer .contentsBox {
+        width: 320px;
+        margin: 0 auto;
+        padding: 0;
+        padding-top: var(--size-40);
+        padding-bottom: var(--size-60);
+    }
+    
+    .dialogContainer .contentsBox .product {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .dialogContainer .qrCover {
+        align-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: var(--size-12);
+    
+        border: 2px solid #EEEFEF;
+        border-radius: 10px;
+    }
+    .dialogContainer .qrCover svg {
+        height: auto;
+        width: 170px;
+        max-height: 170;
+    }
+    
+    .dialogContainer .contentsBox .inputInfo {
+        font-size: 0.75rem;
+        line-height: 110%;
+        color: var(--defaultColor);
+    }
+    
+    .dialogContainer .addrssInput {
+        width: 15.063rem;
+    }
+    
+    .dialogContainer .copyBtn {
+        width: 4.188rem;
+
+        font-size: var(--size-12);
+        line-height: 100%;
+    }
+    
+    .rowAlignCenter {
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .rowAlignCenter.mt40 {
+        margin-top: var(--size-30);
+    }
+     
+    .dialogContainer .warringInfoBox {
+        width: 100%;
+        padding: var(--size-18) var(--size-24);
+    }
+    
+    .dialogContainer .warringInfoBox p {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        color: #4d4d4d;
+    }
+    
+    .dialogContainer .warringInfoBox li {
+        font-size: 12px;
+    }
+    
+    .dialogContainer .buttonBox{
+        margin-top: var(--size-40);
+    }
+    
+    .dialogContainer .buttonBox > button{
+        height: var(--size-40);
+        font-size: var(--size-12);
+        
+    }
+    
+    .dialogContainer .buttonBox .close{
+        width: 5.938rem;
+    }
+    
+    .dialogContainer .buttonBox .done{
+        width: 13.063rem;
+    }
+
+}

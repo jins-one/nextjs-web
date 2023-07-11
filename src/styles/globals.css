@@ -1,0 +1,634 @@
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./fonts/Noto_Sans/NotoSansKR-Black.otf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./fonts/Noto_Sans/NotoSans-ExtraBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./fonts/Noto_Sans/NotoSansKR-Bold.otf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./fonts/Noto_Sans/NotoSansKR-Medium.otf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./fonts/Noto_Sans/NotoSansKR-Regular.otf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./fonts/Noto_Sans/NotoSansKR-Light.otf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Alumnu Sans';
+  src: url('./fonts/Alumni_Sans/AlumniSans-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('./fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-Black.ttf') format('truetype'),
+    url('./fonts/Poppins/Poppins-Bold.ttf') format('truetype'),
+    url('./fonts/Poppins/Poppins-ExtraBold.ttf') format('truetype'),
+    url('./fonts/Poppins/Poppins-ExtraLight.ttf') format('truetype'),
+    url('./fonts/Poppins/Poppins-Light.ttf') format('truetype'),
+    url('./fonts/Poppins/Poppins-Medium.ttf') format('truetype'),
+    url('./fonts/Poppins/Poppins-Regular.ttf') format('truetype'),
+    url('./fonts/Poppins/Poppins-SemiBold.ttf') format('truetype'),
+    url('./fonts/Poppins/Poppins-Thin.ttf') format('truetype'),
+  ;
+}
+
+:root {
+  --fontAlumni: 'Alumnu Sans', sans-serif;
+  --fontNoto: 'Noto Sans', sans-serif;
+  --fontPoppins: 'Poppins', sans-serif;
+  --fontNunito: 'Nunito', sans-serif;
+
+  --size-6: 0.375rem;
+
+  --size-10: 0.625rem;
+  --size-12: 0.75rem;
+  --size-14: 0.875rem;
+  --size-15: 0.9375rem;
+  --size-16: 1rem;
+  --size-18: 1.125rem;
+
+
+  --size-20: 1.25rem;
+  --size-22: 1.375rem;
+  --size-24: 1.5rem;
+  --size-25: 1.5625rem;
+  --size-26: 1.625rem;
+  --size-28: 1.75rem;
+
+  --size-30: 1.875rem;
+  --size-32: 2rem;
+  --size-33: 2.0625rem;
+  --size-34: 2.125rem;
+  --size-36: 2.25rem;
+  --size-38: 2.375rem;
+
+  --size-40: 2.5rem;
+  --size-44: 2.75rem;
+  --size-46: 2.875rem;
+  --size-48: 3rem;
+
+  --size-50: 3.125rem;
+  --size-54: 3.375rem;
+  --size-56: 3.5rem;
+  --size-59: 3.6875rem;
+  --size-60: 3.75rem;
+  --size-63: 3.9375rem;
+  --size-64: 4rem;
+  --size-66: 4.125rem;
+  --size-69: 4.3125rem;
+  --size-70: 4.375rem;
+  --size-78: 4.875rem;
+
+  --size-80: 5rem;
+
+  --size-83: 5.1875rem;
+  --size-86: 5.375rem;
+  --size-89: 5.5625rem;
+  --size-90: 5.625rem;
+
+  --size-97: 6.0625rem;
+
+  --size-100: 6.25rem;
+  --size-102: 6.375rem;
+  --size-104: 6.5rem;
+  --size-110: 6.875rem;
+  --size-107: 6.6875rem;
+  --size-120: 7.5rem;
+
+  --size-130: 8.125rem;
+
+  --size-140: 8.75rem;
+
+  --size-150: 9.375rem;
+  --size-156: 9.75rem;
+  --size-172: 10.75rem;
+  --size-180: 11.25rem;
+
+  --size-161: 10.0625rem;
+  --size-200: 12.5rem;
+  --size-238: 14.875rem;
+
+
+
+  --size-310: 19.375rem;
+  --size-320: 20rem;
+  --size-356: 22.25rem;
+  --size-414: 25.875rem;
+  --size-440: 27.5rem;
+  --size-649: 40.5625rem;
+
+  --size-1280: 80rem;
+
+
+  --blackColor: #000;
+  --whiteColor: #fff;
+
+  --defaultColor: #8F00FF;
+  --defaultColor2: #381565;
+  --defaultColor3: #A967FE;
+
+  --textColor1: #1A1A1A;
+  --textColor2: #808080;
+  --textColor3: #374151;
+
+
+  --textColor4: #F6F5FF;
+
+  --textColor5: #FF0000;
+  --textColor6: #000000;
+
+  --textColorGray1: #B2B2B2;
+  --textColorGray2: #EEEFEF;
+
+  --textColorGray3: #F6F7F9;
+
+  --textColorGray4: #4D4D4D;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--fontNoto);
+}
+
+body.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+#__next {
+  width: 100%;
+  height: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+.defaultContainer {
+  width: 1920px;
+  padding: 0 320px;
+  margin: 0 auto;
+}
+
+.mainDefaultContainer {
+  width: 100%;
+  padding: 0 320px;
+  margin: 0 auto;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: max(2px, 0.1em) solid #B2B2B2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 1.375rem;
+}
+
+input[type="radio"]:checked {
+  border: max(2px, 0.1em) solid var(--defaultColor);
+}
+
+input[type="date"] {
+  background-color: white;
+}
+
+input[type="radio"]:checked:after {
+  background: var(--defaultColor);
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  display: block;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+
+  background-color: white;
+  background-image: url('../../public/images/icon/icon-down.png');
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0.938rem) center;
+}
+
+input:focus, select:focus {
+  outline: none;
+}
+
+section {
+  position: relative;
+}
+
+
+dialog::backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+
+}
+
+.scrollLock {
+  overflow: hidden;
+}
+
+select option[value='default'][disabled] {
+  display: none;
+}
+
+#swiperBox .swiper-pagination-bullet {
+  width: var(--size-18);
+  height: var(--size-18);
+
+  border-radius: 100px;
+
+  opacity: 1;
+
+  background-color: #EEEFEF;
+}
+
+#swiperBox .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #8F00FF;
+}
+
+.disableCkeditor .ck-editor .ck-toolbar,
+.writeCkeditor .ck-editor .ck-toolbar {
+  display: none;
+}
+
+.disableCkeditor .ck-editor .ck-content {
+  border: none;
+  padding: 0;
+}
+
+.disableCkeditor .ck.ck-editor__main>.ck-editor__editable {
+  background: none;
+}
+
+.writeCkeditor .ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable {
+  border: 1px solid #b2b2b2;
+  border-radius: 0.375rem;
+  min-height: 25rem;
+  max-height: 25rem;
+  font-size: 0.875rem;
+  color: #808080;
+  padding: 1.5rem;
+}
+
+.conditionsBox {
+  margin-top: 0.75rem;
+  margin-bottom: 2.875rem;
+}
+
+.conditionsBox .disableCkeditor .ck-editor .ck-content {
+  width: 67.5rem;
+  height: 9.375rem;
+
+  border-radius: 0.313rem !important;
+  border: 1px solid #b2b2b2 !important;
+  padding: 1.25rem 1.5rem 0.625rem !important;
+
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #808080;
+
+}
+
+.identification .disableCkeditor .ck-editor .ck-content {
+  width: 35.75rem;
+  height: fit-content;
+  /* height: 34.375rem; */
+
+  /* border-radius: 0.625rem !important;
+  border: 2px solid #b2b2b2 !important; */
+  /* padding: 1.25rem 0.5rem !important; */
+
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.postContents .disableCkeditor .ck-editor .ck-content {
+  min-height: 300px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #b2b2b2;
+}
+
+input[type='text']:focus,
+input[type='number']:focus,
+input[type='password']:focus,
+input[type='email']:focus {
+  border-color: var(--defaultColor) !important;
+  background-color: white !important;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* mainBannerSlide */
+.mainBannerSlide .swiper-button-next {
+  background: url(../../public/images/icon/bannerRight.png) no-repeat center;
+  background-size: contain;
+  width: 72px;
+  height: 72px;
+  
+  top: 527px;
+  left: 75px;
+}
+
+.mainBannerSlide .swiper-button-prev {
+  background: url(../../public/images/icon/bannerLeft.png) no-repeat center;
+  background-size: contain;
+  width: 72px;
+  height: 72px;
+
+  top: 527px;
+  left: 0;
+}
+
+.mainBannerSlide.main .swiper-wrapper {
+  width: fit-content;
+  transition-timing-function : linear;
+}
+
+.mainBannerSlide.main .swiper-slide.swiper-slide-next,
+.mainBannerSlide.main .swiper-slide.swiper-slide-prev {
+  /* background-color: white; */
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.mainBannerSlide .swiper-button-next::after,
+.mainBannerSlide .swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 46px !important;
+}
+
+.sectionF .swiper-horizontal>.swiper-pagination-bullets,
+.sectionF .swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: none;
+}
+
+.mainBannerSlide .swiper-pagination-bullet {
+  width: var(--size-10);
+  height: var(--size-10);
+
+  border-radius: 100%;
+
+  background-color: var(--whiteColor);
+  opacity: 1;
+
+  margin: 27px 0 !important;
+}
+
+.mainBannerSlide.main .swiper-pagination-vertical.swiper-pagination-bullets,
+.mainBannerSlide.main .swiper-vertical>.swiper-pagination-bullets {
+  right: 24px !important;
+}
+
+.mainBannerSlide .swiper-pagination-bullet:first-child {
+  margin-left: 0 !important;
+}
+
+.mainBannerSlide .swiper-pagination-bullet:last-child {
+  margin-right: 0 !important;
+}
+
+.mainBannerSlide .swiper-pagination-bullet-active {
+  width: var(--size-38);
+  border-radius: 10px;
+  background-color: var(--defaultColor);
+}
+
+.mainBannerSlide.main .swiper-pagination-bullet-active {
+  width: var(--size-10);
+  height: var(--size-38);
+  border-radius: 10px;
+  background-color: var(--defaultColor);
+}
+
+
+
+/* 1:1문의 작성에서 placeholder 줄바꿈을 위해 넣음 */
+.ck.ck-editor__editable>.ck-placeholder::before {
+  width: 400px;
+  color: #b2b2b2;
+}
+
+.inputAuthNumber input[type='number']:disabled {
+  border: 2px solid #eeefef;
+  background-color: #f6f7f9;
+}
+
+section {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+@media screen and (max-width:1919px) {
+  .defaultContainer {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width:1250px) {
+  dialog {
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+
+  section {
+    width: 320px;
+    padding: 0;
+  }
+
+  .defaultContainer {
+    width: 100%;
+    padding: 0;
+  }
+
+
+  input[type="radio"] {
+    width: 1.25rem;
+    height: 1.25rem;
+
+    margin-right: 0.25rem;
+  }
+
+  input[type="radio"]:checked:after {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .mainBannerSlide.main .swiper-slide.swiper-slide-next {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .mainBannerSlide.main .swiper-slide.swiper-slide-prev {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .mainBannerSlide.main .swiper-slide.swiper-slide-next img,
+  .mainBannerSlide.main .swiper-slide.swiper-slide-prev img {
+    height: 172px !important;
+    width: auto !important;
+    /* transition: height 3s !important; */
+  }
+  .mainBannerSlide.main .swiper-wrapper {
+    align-items: baseline;
+  }
+
+  .mainBannerSlide .swiper-button-next,
+  .mainBannerSlide .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: block !important;
+    bottom: 29px !important;
+  }
+
+  .sectionF .swiper-horizontal>.swiper-pagination-bullets,
+  .sectionF .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .sectionSe .swiper-horizontal>.swiper-pagination-bullets,
+  .sectionSe .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0 !important;
+  }
+
+  .sectionF .mainBannerSlide .swiper-pagination-bullet,
+  .sectionSe .mainBannerSlide .swiper-pagination-bullet {
+    background-color: #eeefef;
+    opacity: 1 !important;
+    margin: 0 var(--size-6) !important;
+  }
+
+  .sectionF .mainBannerSlide .swiper-pagination-bullet-active,
+  .sectionSe .mainBannerSlide .swiper-pagination-bullet-active {
+    background-color: var(--defaultColor);
+  }
+
+  .conditionsBox {
+    margin-top: 0.563rem;
+    margin-bottom: 1.375rem;
+  }
+
+  .conditionsBox .disableCkeditor .ck-editor .ck-content {
+    width: 100%;
+    height: var(--size-150);
+
+    border-radius: 0.625rem !important;
+    padding: var(--size-14) var(--size-24) !important;
+
+    font-size: 0.75rem;
+  }
+
+
+  .identification .disableCkeditor .ck-editor .ck-content {
+    width: 100%;
+
+    font-size: 0.625rem;
+  }
+
+  .writeCkeditor .ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable {
+    min-height: 15rem;
+    max-height: 15rem;
+    font-size: 0.875rem;
+    width: 100%;
+
+  }
+
+  .mainBannerSlide .swiper-pagination-bullet {
+    margin: 0 var(--size-6) !important;
+  }
+  
+
+  .mainBannerSlide.main .swiper-pagination-bullet-active {
+    height: var(--size-10);
+    width: var(--size-38);
+    border-radius: 10px;
+    background-color: var(--defaultColor);
+  }
+
+}

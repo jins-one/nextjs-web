@@ -1,0 +1,398 @@
+.productContainer {
+    padding-top: var(--size-100);
+    padding-bottom: 11.25rem;
+    justify-content: flex-start;
+    flex-direction: column;
+    letter-spacing: -0.02em;
+}
+
+.subTitle {
+    font-size: 1.125rem;
+    color: #B0D0FF;
+    width: 100%;
+    margin-left: 2.5rem;
+}
+.mainBox {
+    display: flex;
+    justify-content: space-between;
+}
+.mainTitle {
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-top: 1.375rem;
+    width: fit-content;
+    margin-left: 2.5rem;
+}
+
+.balanceDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.balanceBox {
+    width: 509px;
+    border-radius: 0.625rem;
+    background: linear-gradient(95.31deg, #7A3EFD 1.06%, rgba(249, 147, 112, 0.5) 110.01%);
+    padding: 2.5rem;
+    margin-right: 1.25rem;
+    height: 13rem;
+}
+.balanceBox > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.balanceBox > div:nth-child(1) > div:nth-child(1) {
+    /* margin-right: 4rem; */
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+.balanceBox > div:nth-child(1) > div > span {
+    font-weight: 700;
+}
+.balanceBox > div:nth-child(2) {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    font-size: 2.813rem;
+    font-weight: 700;
+    color: white;
+}
+
+.balanceBox > div:nth-child(2) > span {
+    font-size: 1.5rem;
+}
+
+.iconRotate {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url('../../../public/images/icon/icon-rotate-white.png');
+}
+
+.iconRotate.clicked{
+    /* background-image: url('../../../public/images/icon/icon-rotate-purple.png'); */
+    animation: rotate .5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.iconRotate:hover {
+    transform: rotate(360deg);
+    transition: transform .5s ease-in-out .1s;
+}
+.iconRotate, .iconUpDwon {
+    cursor: pointer;
+}
+
+.depositBox {
+    border: 2px solid transparent;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(95.31deg, #7A3EFD 1.06%, rgba(249, 147, 112, 0.5) 110.01%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-radius: 0.625rem;
+    height: 13rem;
+}
+
+.depositBox > div:nth-child(1) {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--defaultColor);
+    margin: 2rem;
+}
+.depositBox > div:nth-child(2) {
+    color: var(--defaultColor);
+    cursor: pointer;
+    font-size: 0.875rem;
+    width: 13.625rem;
+    padding-block: var(--size-20);
+    border-radius: 0.625rem;
+    border: 2px solid var(--defaultColor3);
+    text-align: center;
+    margin: 2rem;
+}
+
+.depositBox > div:nth-child(2):hover{
+    background-color: var(--defaultColor3);
+    color: var(--whiteColor);
+}
+
+.productDiv {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+.productDiv > div:nth-child(1) {
+    flex-basis: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.productDiv > div:nth-child(2) {
+    flex-basis: 70%;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.productHeader {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    height: 2.125rem;
+    margin-bottom: 1.5rem;
+}
+.productHeader > span {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.filterBox {
+    border: 2px solid #eeefef;
+    background: white;
+    border-radius: 0.625rem;
+
+    padding: 1.5rem;
+}
+
+.filterBox > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.281rem;
+    
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.bar {
+    height: 1px;
+    background: #B2B2B2;
+    width: 100%;
+    margin-block: 0.75rem;
+}
+
+.filterType {
+    padding-inline: 0.75rem;
+    /* margin-top: 0.75rem; */
+}
+.filterType > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.checkBox {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.checkBox > input {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.75rem;
+    accent-color: var(--defaultColor);
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.contactBox {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+
+    border-radius: 1.25rem;
+    border: 2px solid #eeefef;
+    background: white;
+
+    transition: box-shadow .3s ease-out .1s;
+    cursor: pointer;
+}
+
+.contactBox:hover{
+    box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contactTitle {
+    /* padding-left: 2rem; */
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.contactImg {
+    width: 50%;
+    height: auto;
+    margin-bottom: 0.75rem;
+}
+.contactDesc {
+    /* padding-left: 2rem; */
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.goCS {
+    width: fit-content;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: var(--size-32);
+}
+
+.depositDiv > div {
+    margin-bottom: 1.5rem;
+}
+.depositDiv > div:last-child {
+    margin-bottom: 0;
+}
+
+.adBox {
+    width: 100%;
+    height: 149px;
+    margin-top: var(--size-50);
+    cursor: pointer;
+
+    background: url('../../../public/images/img/blink-deposit-usage.png') no-repeat center;
+    background-size: cover;
+}
+
+
+@media screen and (max-width:1250px) {
+    .depositSection {
+        width: 320px;
+        margin: 0 auto;
+        padding: 0;
+
+        margin-top: 55px;
+    }
+
+    .productContainer {
+        width: 100%;
+        padding-top: var(--size-20);
+        padding-bottom: var(--size-100);
+    }
+    .productContainer .mainBox {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .productContainer .mainBox .subTitle {
+        font-size: var(--size-12);
+        font-weight: 400;
+        margin-left: 0;
+    }
+
+    .productContainer .mainBox .mainTitle {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.4;
+        margin-top: var(--size-10);
+        margin-left: 0;
+    }
+    
+    .productContainer .mainBox .balanceDiv {
+        display: flex;
+        flex-direction: column;
+        margin-top: calc(var(--size-20) + 1px);
+    }
+    .productContainer .mainBox .balanceDiv .balanceBox {
+        width: 100%;
+        padding: 1.25rem 1.5rem;
+        margin-right: 0;
+        height: fit-content;
+    }
+    .productContainer .mainBox .balanceDiv .balanceBox > div:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .productContainer .mainBox .balanceDiv .balanceBox > div:nth-child(1) > div:nth-child(1) {
+        margin-right: 0;
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+    .productContainer .mainBox .balanceDiv .balanceBox > div:nth-child(1) > div > span {
+        font-weight: 700;
+        font-size: 1.125rem;
+    }
+    .productContainer .mainBox .balanceDiv .balanceBox > div:nth-child(1) > div:nth-child(1) .iconRotate {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+    .productContainer .mainBox .balanceDiv .balanceBox > div:nth-child(2) {
+        margin-top: 2rem;
+        font-size: 2.25rem;
+    }
+    .productContainer .mainBox .balanceDiv .balanceBox > div:nth-child(2) > img {
+        
+    }
+
+    .productContainer .mainBox .balanceDiv .balanceBox > div:nth-child(2) > span {
+        font-size: 1.125rem;
+        
+    }
+    
+    
+    .productContainer .mainBox .balanceDiv .depositBox {
+        margin-top: var(--size-12);
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .productContainer .mainBox .balanceDiv .depositBox > div:nth-child(1) {
+        font-size: 0.875rem;
+        font-weight: 400;
+        margin: var(--size-20) calc(var(--size-20) + 2px);
+        line-height: 1.4;
+    }
+    .productContainer .mainBox .balanceDiv .depositBox > div:nth-child(2) {
+        font-size: 0.75rem;
+        width: fit-content;
+        padding-inline: var(--size-24);
+        padding-block: var(--size-14);
+        margin: var(--size-20) calc(var(--size-20) + 2px);
+    }
+    
+    .productContainer .productDiv {
+        display: flex;
+        flex-direction: row;
+        margin-top: var(--size-60);
+    }
+    .productContainer .productDiv > div:nth-child(1) {
+        display: none;
+    }
+
+    .productContainer .productDiv .productHeader {
+        font-size: 0.875rem;
+        height: fit-content;
+        margin-bottom: 1.5rem;
+        font-weight: 400;
+    }
+    .productContainer .productDiv .productHeader > span {
+        font-weight: 700;
+        font-size: 1.25rem;
+    }
+    
+    .productContainer .productDiv .depositDiv > div {
+        margin-bottom: 0.75rem;
+    }
+
+    .adBox {
+        width: 320px;
+        height: 140px;
+        margin-top: var(--size-24);
+        background: url('../../../public/images/img/blink-deposit-usate-m.png') no-repeat center;
+    }
+    
+
+}

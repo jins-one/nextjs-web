@@ -1,0 +1,229 @@
+.depositBox {
+    background: white;
+    width: 100%;
+    border-radius: 0.625rem;
+    box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+.boxSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.productName{
+    width: var(--size-150);
+}
+
+.productName > div:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 100%;
+}
+.productName > div:nth-child(2) {
+    font-size: 0.875rem;
+    line-height: 100%;
+    color: #808080;
+}
+
+.interest{
+    display: flex;
+    flex-direction: column;
+
+    width: calc(var(--size-20) + var(--size-40));
+    margin-left: calc(var(--size-40) + var(--size-18));
+
+    margin-top: calc(var(--size-10) - 2px);
+}
+
+.boxSection .title{
+    font-size: var(--size-14);
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--textColor2);
+
+    margin-bottom: var(--size-12);
+}
+
+.boxSection .result{
+    font-size: var(--size-24);
+    font-weight: 700;
+    line-height: 87%;
+
+    color: var(--defaultColor);
+}
+
+.interest .result::after{
+    content: '%';
+}
+
+.period{
+    display: flex;
+    flex-direction: column;
+
+    width: calc(var(--size-40) + var(--size-40));
+    margin-left: var(--size-40);
+
+    margin-top: calc(var(--size-10) - 2px);
+}
+
+.period .result{
+    color: var(--textColor1);
+}
+
+.quantity{
+    width: calc(var(--size-150) + 4px);
+    margin-left: var(--size-40);
+    margin-top: calc(var(--size-10) - 2px);
+
+    height: 4.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quantity > div{
+    display: flex;
+    width: 100%;
+}
+
+.quantity > div > .result{
+    font-weight: 400;
+    font-size: var(--size-18);
+
+    color: var(--textColor1);
+}
+
+.quantity > div:nth-child(1) > .result{
+    margin-left: var(--size-12);
+}
+.quantity > div:nth-child(2) > .result{
+    margin-left: calc(var(--size-20) + 1px);
+}
+
+.quantity > div > .result::after{
+    content: " ETH";
+}
+
+.insertButton {
+    width: 11.25rem;
+    height: 3.375rem;
+    background: white;
+    color: var(--defaultColor);
+    border: 2px solid var(--defaultColor3);
+    border-radius: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: var(--size-14);
+    line-height: 100%;
+    font-weight: 500;
+
+    padding: var(--size-20) 0;
+
+    cursor: pointer;
+    transition: background-color .1s linear .05s, color .1s linear .05s;
+    
+}
+
+
+.insertButton:hover{
+    background-color: var(--defaultColor3);
+    color: var(--whiteColor);
+}
+
+
+
+
+
+@media screen and (max-width:1250px) {
+    .depositBox.mobile {
+        width: 100%;
+        padding: var(--size-20);
+    
+        display: flex;
+        flex-direction: column;
+    
+        justify-content: inherit;
+    }
+
+    .depositBox.mobile > div:nth-child(1) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .depositBox.mobile .productNameDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .depositBox.mobile .productNameDiv > img {
+        width: var(--size-30);
+        height: auto;
+    }
+
+    .depositBox.mobile .productNameDiv .productName > div:nth-child(1) {
+        font-size: var(--size-18);
+        margin-bottom: 0.25rem;
+    }
+    .depositBox.mobile .productNameDiv .productName > div:nth-child(2) {
+        font-weight: 400;
+        font-size: var(--size-10);
+        line-height: 1.1;
+    }
+
+    .depositBox.mobile > div:nth-child(1) .insertButton {
+        width: fit-content;
+        height: fit-content;
+        padding: var(--size-12) var(--size-20);
+    }
+
+    .depositBox.mobile .productDesc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: var(--size-20);
+    }
+
+    .depositBox.mobile .productDesc > div {
+        margin: 0;
+    }
+
+    .depositBox.mobile .productDesc > div .title {
+        font-size: var(--size-10);
+        line-height: 1.1;
+        font-weight: 400;
+    }
+
+    .depositBox.mobile .productDesc > div .result {
+        font-size: var(--size-16);
+    }
+
+    .depositBox.mobile .productDesc .quantity {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .depositBox.mobile .productDesc .quantity > div {
+        display: flex;
+        align-items: center;
+    }
+
+    .depositBox.mobile .productDesc .interest .result,
+    .depositBox.mobile .productDesc .period .result {
+        font-weight: 700;
+    }
+
+    .depositBox.mobile .productDesc .interest .result {
+        color: var(--defaultColor);
+    }
+}

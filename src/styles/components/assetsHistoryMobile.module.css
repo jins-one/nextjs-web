@@ -1,0 +1,462 @@
+.modal {
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border: none;
+
+    padding: 0;
+    border-radius: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.modal:focus {
+    border: none;
+}
+
+.headerBox {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: var(--size-80);
+}
+
+
+
+.headerBox .closeButton {
+    width: var(--size-18);
+    height: var(--size-18);
+    position: absolute;
+    top: var(--size-20);
+    left: var(--size-20);
+
+    border: none;
+    background-color: inherit;
+    outline: 0;
+}
+
+.headerBox .closeButton img {
+    width: 100%;
+    height: 100%;
+}
+
+.dialogContainer {
+    height: 100%;
+}
+
+.dialogContainer .titleBox {
+    padding: 0.785rem 0;
+}
+
+.dialogContainer .titleBox .title {
+
+    font-weight: 700;
+    font-size: var(--size-24);
+    line-height: 140%;
+
+    text-align: center;
+
+    color: var(--blackColor);
+}
+
+.dialogContainer .contentsBox {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: var(--size-50);
+}
+
+.dialogContainer .filterDiv {
+    width: 100%;
+    height: var(--size-50);
+    background-color: #f6f7f9;
+    display: flex;
+    align-items: center;
+}
+
+.dialogContainer .filterDiv>div {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    font-size: var(--size-12);
+    color: #808080;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.dialogContainer .contentsBox .infoBox {
+    margin-top: var(--size-50);
+
+    width: 100%;
+    background-color: #f6f7f9;
+    border-radius: 0.625rem;
+    padding: var(--size-20);
+
+}
+
+.dialogContainer .infoBoxTitleBox {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.dialogContainer .infoBoxTitleBox .noti {
+    width: 55px;
+    height: 21px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--defaultColor);
+
+    border-radius: 99px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: var(--textColor1);
+}
+
+.dialogContainer .infoBoxTitleBox .title {
+    font-size: var(--size-14);
+    font-weight: 400;
+    line-height: 1.4;
+    color: #4d4d4d;
+    margin-left: 0.75rem;
+}
+
+.dialogContainer .infoBox ol {
+    margin-top: 0.75rem;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: var(--textColor1);
+}
+
+.dialogContainer .infoBox li {
+    list-style: decimal !important;
+    margin-left: var(--size-20);
+}
+
+
+.dialogContainer .optionContainer {
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.dialogContainer .optionContainer .backdrop {
+    background: rgba(0, 0, 0, 0.8);
+    height: calc(100vh - 438px);
+    border: none;
+}
+
+.dialogContainer .optionContainer .header {
+    height: 56px;
+    border-bottom: 2px solid #eeefee;
+    display: flex;
+    align-items: center;
+}
+
+.dialogContainer .optionContainer .header>div {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.dialogContainer .optionContainer .options {
+    width: 320px;
+    height: 382px;
+    margin: 0 auto;
+    padding-top: var(--size-20);
+    padding-bottom: 2.25rem;
+}
+
+.dialogContainer .optionContainer .options .optionItem {
+    margin-bottom: var(--size-24);
+}
+
+.dialogContainer .optionContainer .options .optionItem:last-child {
+    margin-bottom: 0;
+}
+
+.optionContainer .options .optionTitle {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: var(--size-12);
+}
+
+.optionContainer .options .optionContents .datePicker input[type='date'] {
+    width: 114px;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #4d4d4d;
+    font-family: var(--fontNoto);
+}
+
+.optionContainer .options .optionContents.date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.optionContainer .options .optionContents .datePicker {
+    width: 9.25rem;
+    height: var(--size-46);
+    border: 2px solid #b2b2b2;
+    border-radius: 0.625rem;
+    padding-inline: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.optionContainer .options .optionContents span {
+    font-size: 0.875rem;
+    color: #b2b2b2;
+    font-weight: 700;
+}
+
+.optionContainer .options .optionContents.status {
+    display: flex;
+    flex-direction: column;
+}
+
+.optionContainer .options .optionContents.status>div,
+.optionContainer .options .optionContents.sort {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.optionContainer .options .optionContents.status>div:nth-child(2) {
+    margin-top: var(--size-10);
+    width: 294px;
+}
+
+.optionContents input[type='radio'],
+.optionContents input[type='checkbox'] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.optionContainer .options .optionContents label {
+    height: var(--size-46);
+    border-radius: 0.625rem;
+    font-size: var(--size-12);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    background-color: white;
+    color: black;
+    border: 2px solid #b2b2b2;
+}
+
+.optionContents input[type='radio']:checked+label {
+    background-color: var(--defaultColor);
+    color: white;
+    border: none;
+}
+
+.optionContainer .options .optionContents.sort {
+    width: 192px;
+}
+
+.optionContainer .options .optionContents.status>.deposit .statusChoice {
+    width: var(--size-100);
+}
+
+.optionContainer .options .optionContents.status>.withdrawal .statusChoice,
+.optionContainer .options .optionContents.sort .statusChoice {
+    width: var(--size-90);
+}
+
+.dialogContainer .contentsBox .historyListDiv > div.historyItem {
+    margin-bottom: var(--size-12);
+}
+.dialogContainer .contentsBox .historyListDiv > div.historyItem:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* ******** 입출금내역 아이템 ******* */
+
+.historyItem {
+    width: 100%;
+    padding: var(--size-20);
+    border: 2px solid #eeefee;
+    border-radius: 0.625rem;
+}
+
+.historyItem .historyDesc {
+    padding-bottom: var(--size-20);
+    display: flex;
+    flex-direction: column;
+}
+.historyItem .historyDesc .type {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 7px;
+}
+.historyItem .historyDesc .type > span:nth-child(1) {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--textColor1);
+    line-height: 1.4;
+}
+.historyItem .historyDesc .type > span:nth-child(1)[type='예치중'] {
+    color: var(--defaultColor);
+}
+.historyItem .historyDesc .type > span:nth-child(2) {
+    font-size: var(--size-12);
+    font-weight: 400;
+    
+    line-height: 1.1;
+    margin-left: 5px;
+}
+.historyItem .historyDesc .type > span:nth-child(2)[type='출금대기'] {
+    color: var(--defaultColor);
+}
+.historyItem .historyDesc .type > span:nth-child(2)[type='출금실패'],
+.historyItem .historyDesc .type > span:nth-child(2)[type='입금실패'] {
+    color: #ff0000;
+}
+.historyItem .historyDesc .date {
+    font-size: var(--size-12);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--textColor1);
+}
+.historyItem .historyDesc .priceDiv {
+    margin-top: var(--size-24);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.historyItem .detailDiv {
+    border-top: 2px solid #eeefee;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+}
+.historyItem .detailDiv > div:nth-child(1) {
+    display: flex;
+    justify-content: flex-end;
+}
+.historyItem .detailDiv > div:nth-child(1) > div {
+    width: fit-content;
+    font-size: var(--size-12);
+    color: #b2b2b2;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+}
+.historyItem .detailDiv img {
+    margin-left: 0.5rem;
+}
+
+.historyItem .detailDiv .detailOpen {
+    width: 100%;
+    padding-block: var(--size-24);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.historyItem .detailDiv .detailOpen .detailItem,
+.historyItem .historyDesc .priceDiv .detailItem {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: var(--size-12);
+}
+.historyItem .historyDesc .priceDiv .detailItem {
+    justify-content: space-between;
+}
+.historyItem .detailDiv .detailOpen .detailItem:last-child,
+.historyItem .historyDesc .priceDiv .detailItem:last-child {
+    margin-bottom: 0;
+}
+.historyItem .detailDiv .detailOpen .detailItem > span:nth-child(1),
+.historyItem .historyDesc .priceDiv .detailItem > span:nth-child(1) {
+    width: calc(var(--size-100) - 2px);
+    font-size: var(--size-12);
+    font-weight: 400;
+    line-height: 1.1;
+    color: #b2b2b2;
+    margin-right: 1rem;
+}
+.historyItem .detailDiv .detailOpen .detailItem > span:nth-child(2) {
+    width: 10.375rem;
+    font-size: var(--size-14);
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--textColor1);
+}
+
+.historyItem .detailDiv .detailOpen .detailItem > span.ellipsis[detail='false'] {
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+.historyItem .detailDiv .detailOpen .detailItem > span.ellipsis[detail='true'] {
+    overflow: inherit; 
+    text-overflow: none;
+    white-space: inherit; 
+    word-break: break-all;
+}
+.historyItem .detailDiv .detailOpen .detailItem > span.withdrawalManagerBtn {
+    width: fit-content;
+    color: var(--defaultColor);
+    display: flex;
+    align-items: center;
+}
+
+.historyItem .historyDesc .priceDiv .detailItem > span.price {
+    font-size: var(--size-24);
+    font-weight: 700;
+    line-height: 1.1;
+}
+.historyItem .historyDesc .priceDiv .detailItem > span.price::after {
+    content: 'ETH';
+    margin-left: 2px;
+    font-weight: 400;
+    line-height: 1;
+    font-size: var(--size-18);
+    color: #4d4d4d;
+}

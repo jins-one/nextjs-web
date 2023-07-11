@@ -1,0 +1,303 @@
+.modal {
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    padding: var(--size-40) 0;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.modal:focus {
+    border: none;
+}
+
+.headerBox {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: calc(var(--size-100) - var(--size-10));
+}
+
+.headerBox .logo {
+    width: calc(var(--size-150) - 8px);
+}
+
+.headerBox .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.headerBox .closeButton {
+    width: var(--size-24);
+    height: var(--size-24);
+
+    position: absolute;
+    top: var(--size-40);
+    right: var(--size-40);
+
+    border: none;
+    background-color: inherit;
+    outline: 0;
+}
+
+.headerBox .closeButton img {
+    width: 100%;
+    height: 100%;
+}
+
+.dialogContainer .titleBox {
+    padding-top: calc(var(--size-50) + var(--size-20));
+    /* padding-bottom: var(--size-30); */
+}
+
+.dialogContainer .titleBox .title {
+
+    text-align: center;
+
+    font-weight: 800;
+    font-size: var(--size-36);
+    line-height: 120%;
+
+    color: var(--blackColor);
+}
+
+.dialogContainer .contentsBox {
+    width: 100%;
+    padding-inline: 13.75rem;
+    padding-top: var(--size-40);
+}
+
+.withdrawalScheduled {
+    width: 38.75rem;
+}
+
+.wsTitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 0.813rem;
+}
+
+.wsContents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wsContents>div:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-inline: 0.25rem;
+}
+
+.wsContents>div:nth-child(1),
+.wsContents>div:nth-child(3) {
+    width: 25rem;
+    height: var(--size-50);
+    border: 2px solid #808080;
+    border-radius: 0.625rem;
+    background-color: #F6F7F9;
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    padding-inline: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.estimatedFee {
+    margin-top: 0.813rem;
+    margin-bottom: 0.375rem;
+    color: var(--defaultColor);
+    font-size: 0.875rem;
+}
+
+.warningBox {
+    margin-top: 1.5rem;
+    background-color: #F6F7F9;
+    border-radius: 0.625rem;
+    padding: 1.5rem;
+}
+
+.warningBox>div:nth-child(1) {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 1.063rem;
+
+}
+
+.warningBox li {
+    margin-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+    list-style: disc;
+}
+
+.warningBox li:last-child {
+    margin-bottom: 0;
+}
+
+.btnDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: var(--size-50);
+}
+
+.btnDiv>div {
+    border-radius: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 400;
+    height: var(--size-50);
+    cursor: pointer;
+}
+
+.cancelBtn {
+    border: 2px solid #b2b2b2;
+    width: 156px;
+}
+
+.okBtn {
+    color: white;
+    background-color: var(--defaultColor);
+    width: 440px;
+}
+
+
+@media screen and (max-width:1250px) {
+    .modal {
+        padding: 0;
+        border-radius: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerBox {
+        display: flex;
+        flex-direction: column;
+
+        padding-left: var(--size-80);
+    }
+
+    .headerBox .logo {
+        display: none;
+    }
+
+    .headerBox .closeButton {
+        width: var(--size-18);
+        height: var(--size-18);
+
+        top: var(--size-20);
+        left: var(--size-20);
+        right: inherit;
+    }
+
+    .headerBox .closeButton img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .dialogContainer .titleBox {
+        padding: 0.785rem 0;
+    }
+
+    .dialogContainer .titleBox .title {
+        font-weight: 700;
+        font-size: var(--size-24);
+        line-height: 140%;
+    }
+
+    .dialogContainer .contentsBox {
+        width: 320px;
+        margin: 0 auto;
+        padding: 0;
+        padding-top: var(--size-40);
+        padding-bottom: var(--size-60);
+    }
+
+
+    .warningBox {
+        padding: 1.125rem 1.25rem;
+    }
+
+    .warningBox>div:nth-child(1) {
+        font-size: 0.875rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+
+    }
+
+    .warningBox li {
+        margin-bottom: 0.625rem;
+        font-size: 0.75rem;
+    }
+
+
+
+    .withdrawalScheduled {
+        width: 100%;
+    }
+    
+    .wsTitle {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 0.25rem;
+    }
+    
+    .wsContents>div:nth-child(2) {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-inline: 0.25rem;
+    }
+    
+    .wsContents>div:nth-child(1),
+    .wsContents>div:nth-child(3) {
+        width: 100%;
+        font-size: 0.875rem;
+    }
+    
+    .estimatedFee {
+        margin-top: 0.625rem;
+        font-size: 0.75rem;
+    }
+    .estimatedFee+div {
+        font-size: 0.75rem !important;
+        font-weight: 400 !important;
+        color: #b2b2b2 !important;
+        line-height: 1.1 !important;
+    }
+
+
+
+    .btnDiv {
+        margin-top: var(--size-40);
+    }
+
+    .btnDiv>div {
+        font-size: 0.75rem;
+        height: var(--size-40);
+    }
+
+    .cancelBtn {
+        width: 5.938rem;
+    }
+
+    .okBtn {
+        width: 13.063rem;
+    }
+}

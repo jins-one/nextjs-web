@@ -1,0 +1,43 @@
+.coinRateBox {
+    border-radius: 0.625rem;
+    border: 2px solid #EBEBEB;
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.coinRateText {
+    width: 100%;
+}
+
+.coinRateText>div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coinRateType span:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 0.75rem;
+}
+
+.coinRateType span:nth-child(2) {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #808080;
+}
+
+.coinRateAmount>span:nth-child(1) {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.coinRateAmount>span:nth-child(2) {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #F99370;
+}

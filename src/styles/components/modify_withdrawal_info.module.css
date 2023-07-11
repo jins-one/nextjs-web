@@ -1,0 +1,342 @@
+.modal {
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    padding: var(--size-40) 0;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.modal:focus {
+    border: none;
+}
+
+.headerBox {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: calc(var(--size-100) - var(--size-10));
+}
+
+.headerBox .logo {
+    width: calc(var(--size-120) - 8px);
+}
+
+.headerBox .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.headerBox .closeButton {
+    width: var(--size-24);
+    height: var(--size-24);
+
+    position: absolute;
+    top: var(--size-40);
+    right: var(--size-40);
+
+    border: none;
+    background-color: inherit;
+    outline: 0;
+}
+
+.headerBox .closeButton img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.dialogContainer .titleBox {
+    /* padding-bottom: var(--size-40); */
+}
+
+.dialogContainer .titleBox .title {
+
+    font-weight: 800;
+    font-size: var(--size-36);
+    line-height: 120%;
+
+    text-align: center;
+
+    color: var(--blackColor);
+}
+
+.dialogContainer .contentsBox {
+    width: 100%;
+    padding: 0 calc(var(--size-100) * 2 + var(--size-20));
+    padding-top: var(--size-40);
+}
+
+
+
+.wAddressContainer {
+    padding-top: 13.125rem;
+    padding-bottom: 11.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.title {
+    font-size: 2.625rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+.subTitle {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    margin-top: 0.75rem;
+    text-align: center;
+}
+.inputDiv {
+    margin-top: var(--size-40);
+    width: 38.75rem;
+}
+.inputLabel {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+    margin-top: 2.875rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modiInputDiv > input, .modiInputDiv > select {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    border: 2px solid #B2B2B2;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    border-radius: 0.625rem;
+}
+.walletDesc {
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+}
+.walletDesc > span {
+    color: #FF0000;
+}
+
+
+.reSend {
+    display: flex;
+    align-items: center;
+    float: right;
+    cursor: pointer;
+    margin-right: 0.75rem;
+}
+.reSend > img {
+    margin-right: 0.547rem;
+}
+
+
+.btnDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.75rem;
+}
+.cancelBtn {
+    width: 9.75rem;
+    height: var(--size-50);
+    font-size: 0.875rem;
+    font-weight: 400;
+    cursor: pointer;
+    border: 2px solid #b2b2b2;
+    border-radius: 0.625rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.authBtn {
+    background-color: var(--defaultColor);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+
+    height: var(--size-50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.625rem;
+}
+
+
+
+.selectBox {
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.selectBox select, .selectBox input  {
+    border: 2px solid #B2B2B2;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 0.625rem;
+}
+.selectBox select {
+    width: 9.125rem;
+    height: var(--size-50);
+    text-align: center;
+}
+.selectBox input {
+    width: 100%;
+    height: var(--size-50);
+    padding-inline: 2rem;
+}
+
+.alertDiv {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 0.75rem;
+}
+.alertDiv > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.alertText > div:nth-child(1) {
+    font-size: 1.125rem;
+    color: #808080;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+.alertText > div:nth-child(2) {
+    font-size: 1.125rem;
+    color: #B2B2B2;
+    font-weight: 500;
+}
+.authDoneBtn {
+    background-color: #b2b2b2;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+
+    height: var(--size-50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.625rem;
+}
+
+.addressInputWarning {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #808080;
+    line-height: 1.2;
+    margin-top: 0.75rem;
+}
+
+
+@media screen and (max-width:1250px) {
+    .modal {
+        padding: 0;
+        border-radius: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerBox {
+        display: flex;
+        flex-direction: column;
+
+        padding-left: var(--size-80);
+    }
+
+    .headerBox .logo {
+        display: none;
+    }
+
+    .headerBox .closeButton {
+        width: var(--size-18);
+        height: var(--size-18);
+
+        top: var(--size-20);
+        left: var(--size-20);
+        right: inherit;
+    }
+
+    .headerBox .closeButton img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .dialogContainer .titleBox {
+        padding: 0.785rem 0;
+    }
+
+    .dialogContainer .titleBox .title {
+        font-weight: 700;
+        font-size: var(--size-24);
+        line-height: 140%;
+    }
+
+    .dialogContainer .contentsBox {
+        width: 320px;
+        margin: 0 auto;
+        padding: 0;
+
+        margin-top: var(--size-40);
+        margin-bottom: var(--size-60);
+    }
+
+
+
+    .btnDiv {
+        margin-top: 2.688rem;
+    }
+    .cancelBtn {
+        width: 5.033rem;
+        height: var(--size-40);
+        font-size: 0.75rem;
+    }
+    .authBtn {
+        font-size: 0.75rem;
+        width: 14.194rem !important;
+        height: var(--size-40);
+    }
+
+
+    .inputDiv {
+        margin-top: var(--size-40);
+        width: 100%;
+    }
+    .inputLabel {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 0.25rem;
+        margin-top: 1.688rem;
+    }
+    .modiInputDiv > input, .modiInputDiv > select {
+        width: 100% !important;
+        font-size: 0.875rem;
+    }
+    .walletDesc {
+        font-size: 0.875rem;
+        margin-block: 0.625rem;
+    }
+    .walletDesc > span {
+        color: #FF0000;
+    }
+    .addressInputWarning {
+        font-weight: 400;
+        margin-top: 0.625rem;
+    }
+}

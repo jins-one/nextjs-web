@@ -1,0 +1,803 @@
+.mypageSection,
+.mypageSection2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mypageContainer,
+.identificationContainer {
+    width: 85%;
+    letter-spacing: -0.02em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mypageContainer {
+    padding-top: 5.625rem;
+    padding-bottom: var(--size-80);
+}
+
+.identificationContainer {
+    padding-bottom: 11.25rem;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: url('../../../public/images/img/purple-background.png') no-repeat center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.myPageName {
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: white;
+}
+
+.myPageName span {
+    font-weight: 700;
+    font-size: 3.75rem;
+}
+
+.myProfileDiv {
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.myProfileDiv>div:nth-child(1)>span:nth-child(1),
+.authSeqTitle {
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+
+.profileBox {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profileBox>div {
+    border: 1px solid #B2B2B2;
+    padding: var(--size-30);
+    background: white;
+    border-radius: 0.625rem;
+}
+
+.profileBox>div:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.authentication {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.withdrawalAddress {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.myProfile {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.myProfile>span:nth-child(1) {
+    flex-basis: 45%;
+    color: #808080;
+}
+
+.myProfile>span:nth-child(2) {
+    flex-basis: 55%;
+}
+
+.modifyProfileBtn {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: right;
+    margin-top: 0.75rem;
+    width: 100%;
+    color: #808080;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.modifyProfileBtn>a,
+.modifyProfileBtn>div {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    width: fit-content;
+}
+
+.modifyProfileBtn>div:hover,
+.modifyProfileBtn>a:hover {
+    color: var(--defaultColor3);
+}
+
+.modifyProfileBtn>div img,
+.modifyProfileBtn>a img {
+    transition: transform .1s ease-in-out .1s;
+}
+
+.modifyProfileBtn>div:hover img,
+.modifyProfileBtn>a:hover img {
+    transform: translateX(10px);
+}
+
+.withdrawalAddress>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.authentication>div:nth-child(1),
+.withdrawalAddress>div:nth-child(1) span:nth-child(1) {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.authentication>div:nth-child(2),
+.withdrawalAddress>div:nth-child(2) {
+    font-size: 2rem;
+    color: var(--defaultColor);
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.withdrawalAddress>div:nth-child(1) span:nth-child(2) {
+    font-size: 0.875rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.authentication>div:nth-child(3),
+.blank {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    margin-top: 2rem;
+}
+
+.authSeqDiv {
+    width: 100%;
+}
+
+.authSeqDiv:nth-child(2) {
+    margin-top: 8.938rem;
+}
+
+.authSeqSubTitle {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--defaultColor);
+    line-height: 1.4;
+}
+
+.authSeqDesc {
+    margin-top: 0.875rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #808080;
+    line-height: 1.4;
+}
+
+.authDoneStatus {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.authComplelteBedge {
+    background: var(--defaultColor);
+    color: white;
+    font-size: 0.875rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 6.25rem;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 0.75rem;
+    line-height: 1.4;
+}
+
+.authSeq {
+    margin-top: 2.75rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.activeSteps {
+    width: 21.25rem;
+}
+
+.activeSteps>div:nth-child(1) {
+    height: 3rem;
+    padding: 0.625rem 2.5rem;
+    border-radius: 6.188rem;
+    background: var(--defaultColor);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.activeStepsText {
+    margin-top: 0.75rem;
+    padding: 1.5rem 2.5rem;
+    border: 2px solid var(--defaultColor);
+    border-radius: 1.25rem;
+}
+
+.activeStepsText>div:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.activeStepsText>div:nth-child(2) {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-top: 0.875rem;
+    color: #B2B2B2;
+}
+
+.activeStepsText>div:nth-child(3) {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: 2.5rem;
+    color: var(--defaultColor);
+    border: 2px solid var(--defaultColor);
+    border-radius: 6.188rem;
+
+    width: 100%;
+    text-align: center;
+    padding-block: 0.938rem;
+    cursor: pointer;
+
+    transition: background-color .1s ease .1s, color .1s ease .1s;
+}
+
+.activeStepsText>div:nth-child(3):hover {
+    background-color: var(--defaultColor);
+    color: var(--whiteColor);
+}
+
+.noActiveSteps>div:nth-child(1) {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.bar {
+    width: 11.25rem;
+    height: 2px;
+    background: #D9D9D9;
+}
+
+.circle {
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 6.188rem;
+    background: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.noActiveStepsText {
+    position: absolute;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #B2B2B2;
+}
+
+
+.authSeq2 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.identificationBox {
+    width: 33.125rem;
+    /* height: 8.813rem; */
+    border: 2px solid #B2B2B2;
+    border-radius: 0.625rem;
+    padding: 1.5rem 1.5rem 2.5rem;
+}
+
+.identificationBox>div {
+    display: flex;
+    flex-direction: row;
+}
+
+.identificationBox>div >div:nth-child(2) {
+    margin-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.identifiItem {
+    width: 25.375rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+    height: 3.5rem;
+}
+
+.goIdentiAuth {
+    display: flex;
+    align-items: center;
+}
+
+.goIdentiAuth:hover {
+    color: var(--defaultColor);
+    cursor: pointer;
+}
+
+.goIdentiAuth>img {
+    margin-left: 2px;
+    transition: transform .1s ease-in-out .1s;
+}
+
+.goIdentiAuth:hover img {
+    transform: translateX(10px);
+}
+
+.isAuth {
+    padding: 0.25rem 0.625rem;
+    border: 2px solid;
+    border-radius: 6.25rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.identiText {
+    font-size: 1.125rem;
+    font-weight: 400;
+    /* margin-top: 0.875rem; */
+    color: #B2B2B2;
+}
+
+
+
+.doubleSecureDiv {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+
+    border-radius: 62.5rem;
+    background: #A967EE;
+    color: #f6f7f6;
+
+    width: 34.25rem;
+    height: 19rem;
+
+    padding: 1.5rem;
+    white-space: pre-wrap;
+}
+
+.doubleSecureDiv>div:nth-child(2) {
+    margin-top: 0.125rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+
+}
+
+.doubleSecureDiv>div:nth-child(3) {
+    width: 100%;
+    margin-top: 1.875rem;
+    margin-bottom: 1.125rem;
+}
+
+.doubleSecureDiv>div:nth-child(3)>img {
+    float: right;
+}
+
+.doubleSecureDiv>div:nth-child(4) {
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+.doubleSecureDiv2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 62.5rem;
+    border: 2px dashed #A967EE;
+    width: 19rem;
+    height: 19rem;
+
+    padding: 1.5rem;
+    white-space: pre-wrap;
+}
+
+.doubleSecureDiv2>div:nth-child(2) {
+    font-size: 1.5rem;
+    color: #808080;
+    line-height: 1.4;
+    margin-top: 0.125rem;
+}
+
+.doubleSecureDiv2>div:nth-child(3) {
+    margin-top: 4.25rem;
+    font-size: 1.125rem;
+    text-align: center;
+    color: #B2B2B2;
+}
+
+
+
+@media screen and (max-width:1250px) {
+    .mypageSection {
+        width: 320px;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 55px;
+    }
+
+    .mypageSection2 {
+        width: 320px;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .mypageContainer,
+    .identificationContainer {
+        width: 100%;
+    }
+
+    .mypageContainer {
+        padding-top: var(--size-40);
+        padding-bottom: var(--size-60);
+    }
+
+    .identificationContainer {
+        padding-bottom: var(--size-100);
+    }
+
+    .bg {
+        position: absolute;
+        width: 100%;
+        height: 240px;
+        background: url('../../../public/images/img/purple-background.png') no-repeat left;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .myPageName {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1;
+    }
+
+    .myPageName span {
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .myProfileDiv {
+        margin-top: 1.5rem;
+        width: 100%;
+    }
+
+    .myProfileDiv>div:nth-child(1)>span:nth-child(1),
+    .authSeqTitle {
+        font-size: 1.125rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+
+    .profileBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profileBox>div {
+        padding: var(--size-24) var(--size-20);
+    }
+
+    .profileBox>div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .authentication {}
+
+    .withdrawalAddress {}
+
+    .myProfile {
+        margin-bottom: 0.75rem;
+    }
+
+    .myProfile>span:nth-child(1) {
+        font-size: 0.875rem;
+        line-height: 1.4;
+        font-weight: 400;
+    }
+
+    .myProfile>span:nth-child(2) {
+        flex-basis: 55%;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    .modifyProfileBtn {
+        font-size: 0.75rem;
+        font-weight: 400;
+        margin-top: 0;
+    }
+
+    .authentication>div:nth-child(1),
+    .withdrawalAddress>div:nth-child(1) span:nth-child(1) {
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: #808080;
+    }
+
+    .authentication>div:nth-child(2),
+    .withdrawalAddress>div:nth-child(2) {
+        font-size: 1.25rem;
+        color: var(--defaultColor);
+        font-weight: 700;
+        margin-top: 0.75rem;
+    }
+
+    .withdrawalAddress>div:nth-child(2) {
+        margin-bottom: var(--size-12);
+    }
+
+    .authentication>div:nth-child(3) {
+        font-size: 0.563rem;
+        line-height: 1.1;
+        margin-top: 0.5rem;
+        color: #808080;
+    }
+
+    .authSeqDiv:nth-child(2) {
+        margin-top: var(--size-60);
+    }
+
+    .authSeqSubTitle {
+        margin-top: 0.75rem;
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 1.1;
+    }
+
+    .authSeqDesc {
+        margin-top: 0.5rem;
+        font-size: 0.563rem;
+        line-height: 1.1;
+    }
+
+    .authDoneStatus {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .authComplelteBedge {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.625rem;
+        line-height: 1.1;
+        margin-right: 0;
+        margin-bottom: 0.375rem;
+    }
+
+
+    .authSeq {
+        width: 280px;
+        /* height: calc(var(--size-24) + 211px + var(--size-12)); */
+        margin: 0 auto;
+        margin-top: 1.5rem;
+
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .mobileActiveSteps {
+        width: fit-content;
+        height: 28px;
+        display: flex;
+        align-items: center;
+    }
+    .mobileActiveSteps .circle {
+        width: var(--size-24);
+        height: var(--size-24);
+        border-radius: 50%;
+        background: url('../../../public//images//icon/icon-check.png') var(--defaultColor) no-repeat center;
+        margin-inline: 4px;
+    }
+
+    .mobileActiveSteps .step {
+        position: absolute;
+        top: 2.3rem;
+        left: 0;
+
+        width: 100%;
+        height: 211px;
+        padding: var(--size-24) var(--size-20);
+        border: 2px solid var(--defaultColor);
+        border-radius: 0.625rem;
+        background-color: white;
+    }
+    .mobileActiveSteps .step .stepText {
+        font-size: var(--size-12);
+        color: var(--defaultColor);
+        font-weight: 400;
+        line-height: 1.1;
+        margin-bottom: var(--size-24);
+    }
+    .mobileActiveSteps .step > div:nth-child(2) {
+        font-size: var(--size-18);
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+    .mobileActiveSteps .step > div:nth-child(3) {
+        font-size: var(--size-14);
+        font-weight: 400;
+        line-height: 1.4;
+        color: #b2b2b2;
+    }
+
+    .mobileActiveSteps .step .button {
+        font-size: var(--size-12);
+        font-weight: 500;
+        color: white;
+        width: 100%;
+        height: var(--size-40);
+        border-radius: 0.625rem;
+        background-color: var(--defaultColor);
+        margin-top: var(--size-40);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .activeSteps, .noActiveSteps {
+        display: none;
+    }
+
+    .mobileNoActiveSteps, .mobileDoneActiveSteps {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: fit-content;
+        height: 28px;
+    }
+    .mobileNoActiveSteps .bar,
+    .mobileDoneActiveSteps .bar {
+        display: flex;
+        width: 52px;
+        height: 2px;
+        background-color: #eeefef;
+    }
+    .mobileNoActiveSteps .circle,
+    .mobileDoneActiveSteps .circle {
+        display: flex;
+        background-color: #eeefef;
+        width: 1rem;
+        height: 1rem;
+        margin-inline: 0.375rem;
+    }
+
+    .mobileDoneActiveSteps .bar,
+    .mobileDoneActiveSteps .circle {
+        background-color: var(--defaultColor);
+    }
+
+    .mobileDoneActiveSteps {
+        position: relative;
+    }
+    .mobileDoneActiveSteps .text {
+        position: absolute;
+        min-width: 50px;
+        top: 46px;
+        left: -12px;
+        font-size: 0.75rem;
+        line-height: 1.1;
+        font-weight: 400;
+        text-align: center;
+    }
+
+
+    .authSeq2 {
+        margin-top: 1.5rem;
+    }
+
+    .wView {
+        display: none;
+    }
+    
+    .identificationBox {
+        width: 9.75rem;
+        padding: var(--size-20);
+    }
+    
+    .identificationBox>div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .identificationBox > div > img {
+        width: 50px;
+        height: auto;
+    }
+
+    .identificationBox>div >div:nth-child(2) {
+        margin-left: 0;
+    }
+    
+    .identifiItem {
+        width: fit-content;
+        height: fit-content;
+        flex-direction: column;
+        align-items: flex-start;
+
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1;
+
+        margin-top: var(--size-12);
+    }
+    
+    .goIdentiAuth>img {
+        margin-left: 0;
+    }
+    .goIdentiAuth2 {
+        height: 24px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .isAuth {
+        font-size: 0.75rem;
+        line-height: 1.1;
+        margin-top: var(--size-24);
+    }
+    
+
+}

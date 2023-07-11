@@ -1,0 +1,107 @@
+.closeDiv {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.closeDiv > img {
+    width: var(--size-16);
+    height: var(--size-16);
+}
+dialog.contianer {
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    padding-top: var(--size-100);
+    padding-bottom: calc(var(--size-100) + var(--size-100) - var(--size-20));
+
+    border: none;
+
+    overflow: unset;
+
+    min-width: 26.25rem;
+    min-height: 15.375rem;
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+}
+.contentsDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btnDiv {
+    width: 372px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom:40px;
+}
+
+.okBtn {
+    width: 372px;
+    height: var(--size-50);
+    color: white;
+    border-radius: 0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.okBtn.onBtn {
+    width: 260px;
+}
+
+.cancelBtn {
+    width: var(--size-100);
+    height: var(--size-50);
+    border-radius: 0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid #b2b2b2;
+}
+
+.contentsDiv > div:nth-child(1) > img {
+    margin-right: 0.75rem;
+}
+
+
+@media screen and (max-width:1250px) {
+    dialog.contianer {
+        min-width: 320px;
+        min-height: 192px;
+        padding: var(--size-20);
+    }
+
+    .contentsDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+    .btnDiv {
+        width: 280px;
+        bottom: 20px;
+        font-size: var(--size-12);
+    }
+    
+    .okBtn {
+        width: 280px;
+        height: var(--size-40);
+    }
+    .okBtn.onBtn {
+        width: 184px;
+    }
+    .cancelBtn {
+        width: 84px;
+        height: var(--size-40);
+    }
+}

@@ -1,0 +1,480 @@
+.modal {
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    padding: var(--size-40) 0;
+
+    border: none;
+    border-radius: 10px;
+}
+.modal.deposit {
+    padding-bottom: var(--size-100);
+}
+
+.modal:focus {
+    border: none;
+}
+
+.headerBox {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: calc(var(--size-100) - var(--size-10));
+}
+
+.headerBox .logo {
+    width: calc(var(--size-150) - 8px);
+}
+
+.headerBox .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.headerBox .closeButton {
+    width: var(--size-24);
+    height: var(--size-24);
+
+    position: absolute;
+    top: var(--size-40);
+    right: var(--size-40);
+
+    border: none;
+    background-color: inherit;
+    outline: 0;
+}
+
+.headerBox .closeButton img {
+    width: 100%;
+    height: 100%;
+}
+
+.dialogContainer .titleBox {
+    padding-top: calc(var(--size-50) + var(--size-20));
+    padding-bottom: var(--size-30);
+}
+
+.dialogContainer .titleBox .title {
+
+    text-align: center;
+
+    font-weight: 800;
+    font-size: var(--size-36);
+    line-height: 120%;
+
+    color: var(--blackColor);
+}
+
+.dialogContainer .contentsBox {
+    width: 100%;
+    padding: 0 calc(var(--size-100) + var(--size-10));
+    padding-top: calc(var(--size-30) * 2);
+}
+
+.dialogContainer .contentsBox .product {
+    width: var(--size-1280);
+    display: flex;
+    flex-direction: column;
+}
+
+.dialogContainer .searchOptionBar {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.dialogContainer .dateSelect {
+    width: var(--size-120);
+    height: var(--size-44);
+
+    padding: var(--size-14);
+    border: 1px solid #B2B2B2;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    color: var(--textColorGray4);
+}
+
+.dialogContainer .dateScope {
+    width: var(--size-356);
+    height: var(--size-44);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px 0px 30px;
+    border: 1px solid #B2B2B2;
+}
+
+.dialogContainer .dateScope>input {
+    border: none;
+}
+
+.dialogContainer .textSearch {
+    width: var(--size-120);
+    height: var(--size-44);
+    justify-content: space-between;
+    padding: 14px;
+    border: 1px solid #B2B2B2;
+}
+
+.dialogContainer .textSearch>input {
+    width: var(--size-66);
+    border: none;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+
+    color: var(--textColorGray4);
+}
+
+.dialogContainer .textSearch>img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.dialogContainer .checkBoxContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+
+    color: var(--textColorGray4);
+    cursor: pointer;
+}
+
+.dialogContainer .checkBoxContainer>input {
+    accent-color: var(--defaultColor);
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 2px solid #4D4D4D;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialogContainer .checkBoxContainer>input[type="checkbox"]:checked {
+    background-color: var(--defaultColor);
+    border: 2px solid var(--defaultColor);
+}
+
+.dialogContainer .checkBoxContainer>input[type="checkbox"]::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("../../../public/images/icon/icon-check.png");
+}
+
+.dialogContainer .checkBoxContainer>input[type="checkbox"]:checked::before {
+    background-image: url("../../../public/images/icon/icon-check.png");
+}
+
+.dialogContainer .excelBtn {
+    width: var(--size-83);
+    height: var(--size-38);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--textColorGray1);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+
+    color: #FFFFFF;
+    border: none;
+
+    border-radius: 100px;
+}
+
+.dialogContainer .oneRowContainer {
+    width: var(--size-1280);
+    height: var(--size-46);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: var(--textColor6);
+
+}
+
+.dialogContainer .oneRowContainer p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dialogContainer .rowBtn {
+    height: var(--size-78);
+    background-color: #00000000;
+    border: solid var(--textColorGray3);
+    border-width: 0px 0px 2px 0px;
+}
+
+
+.dialogContainer .pagiBar {
+    display: flex;
+    width: var(--size-1280);
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.dialogContainer .infoBox {
+    width: var(--size-1280);
+    background-color: var(--textColorGray3);
+    flex-direction: column;
+    padding: var(--size-22);
+    border-radius: 10px;
+}
+
+.dialogContainer .infoBoxTitleBox {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.dialogContainer .infoBoxTitleBox .noti {
+    width: var(--size-64);
+    height: var(--size-33);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid var(--defaultColor);
+
+    border-width: 1px;
+    border-radius: 99px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--textColor1);
+}
+
+.dialogContainer .infoBox ol {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--textColor1);
+}
+
+.dialogContainer .infoBox li {
+    list-style: decimal !important;
+    margin-left: var(--size-22);
+}
+
+
+.dialogContainer .infoBoxTitleBox .noti+span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--textColor1);
+}
+
+
+.width33 {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    width: var(--size-33);
+    margin-left: 24px;
+}
+
+.width89 {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    width: var(--size-89);
+    margin-left: 29px;
+}
+
+.width89[type='출금대기'] {
+    color: var(--defaultColor);
+}
+.width100.type[type='예치중'] {
+    color: var(--defaultColor);
+}
+.width89[type='출금실패'],
+.width89[type='입금실패']{
+    color: #ff0000;
+}
+
+.width69 {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    width: var(--size-69);
+    margin-left: 26px;
+}
+
+.width200 {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    width: var(--size-200);
+    margin-left: 26px;
+}
+
+.width78 {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    width: var(--size-78);
+    margin-left: 26px;
+}
+
+.width107 {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    width: var(--size-107);
+    margin-left: 26px;
+}
+
+.width130 {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    width: var(--size-130);
+    margin-left: 26px;
+}
+
+.width63 {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    width: var(--size-63);
+    margin-left: 26px;
+}
+
+.width100 {
+    text-align: center;
+    width: var(--size-100);
+    margin-left: 64px;
+}
+.width100.type {
+    text-align: center;
+    width: var(--size-100);
+    margin-left: 44px;
+}
+.width120 {
+    text-align: center;
+    width: var(--size-120);
+    margin-left: 64px;
+}
+.width200.deposit {
+    margin-left: 64px;
+}
+
+.width172 {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    width: var(--size-172);
+    margin-left: 26px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.withdrawalManageBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 6.688rem;
+    height: 2.875rem;
+    border: 2px solid var(--defaultColor3);
+    border-radius: 0.625rem;
+    color: var(--defaultColor3);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.backGray {
+    background-color: var(--textColorGray3);
+}
+
+.ml12 {
+    margin-left: var(--size-12);
+}
+
+.mt12 {
+    margin-top: var(--size-12);
+}
+
+.ml24 {
+    margin-left: var(--size-24);
+}
+
+.jusfiBet {
+    justify-content: space-between;
+}
+
+.ml16 {
+    margin-left: var(--size-16);
+}
+
+.mt80 {
+    margin-top: var(--size-80);
+}
+
+.mt140 {
+    margin-top: var(--size-140);
+}
+
+.mt30 {
+    margin-top: var(--size-30);
+}
+
+
+.radioBoxFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #4d4d4d;
+
+    cursor: pointer;
+}
+.radioBoxFlex input {
+    margin-right: 0.75rem;
+}

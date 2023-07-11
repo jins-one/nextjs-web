@@ -1,0 +1,134 @@
+.closeDiv {
+    /* width: 100%; */
+    /* display: inline-block; */
+}
+
+.closeDiv > img{
+    width: var(--size-16);
+    height: var(--size-16);
+
+    margin-bottom: var(--size-32);
+
+    display: block;
+}
+
+.imgDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.textDiv {
+    margin-top: var(--size-32);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.textDiv > .textBox{
+    display: flex;
+}
+
+.textDiv > .textBox> img{
+    width: var(--size-24);
+    height: var(--size-24);
+
+    margin-right: var(--size-12);
+}
+
+.textDiv > .textBox > p{
+    text-align: start;
+    font-weight: 400;
+    font-size: var(--size-16);
+    line-height: 140%;
+}
+
+.subText {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #FF0000;
+    margin-top: 0.75rem;
+}
+
+
+.closeDiv2 {
+    z-index: 1;
+    position: fixed;
+    right: 2.5rem;
+    top: 2.5rem;
+}
+
+.goBtnContainer {
+    /* display: flex; */
+    /* width: 100%; */
+    justify-content: space-between;
+}
+
+.goBtnContainer > .closeBtn{
+    width: var(--size-100);
+    height: var(--size-50);
+
+    border: 2px solid #B2B2B2;
+    border-radius: 10px;
+
+    font-weight: 400;
+    font-size: var(--size-14);
+    line-height: 140%;
+
+    color: var(--textColor1);
+    background-color:var(--whiteColor);
+    margin-right: var(--size-12);
+
+    cursor: pointer;
+}
+
+.goBtn {
+    display: inline-flex;
+
+    width: calc((var(--size-100) * 3) - var(--size-40));
+    height: var(--size-50);
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 10px;
+
+    font-style: normal;
+    font-size: var(--size-14);
+
+    color: var(--whiteColor);
+    background-color: #FF0000;
+    align-self: center;
+
+    cursor: pointer;
+}
+
+dialog.contianer {
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    padding-top: var(--size-100);
+    padding-bottom: calc(var(--size-100) + var(--size-100) - var(--size-20));
+
+    border: none;
+
+    overflow: unset;
+
+    width: calc(var(--size-150) * 3);
+    /* height: calc((var(--size-100) * 2) + var(--size-46)); */
+    padding: var(--size-24);
+    padding-bottom: var(--size-40);
+
+    border-radius: 0.625rem;
+}
+
+.mt46{
+    margin-top: var(--size-46);
+}
+
+.mt50 {
+    margin-top: var(--size-50);
+}
